@@ -1,0 +1,536 @@
+<!-- Do not remove these comments.
+
+Last updated: 2025-09-15
+
+============================  
+🔹 ENGLISH VERSION  
+============================  
+
+Version history:  
+v1.1.0 (2025-09-15) International English & correction fixes
+v1.0.1 (2025-09-14) Correcton fixes
+v1.0.0 (2025-09-13) New website start
+
+Author: ade Adrian Ulbrych & HoszMet
+Location: Gliwice, Silesia, Poland
+Contact: +48 601 190 330
+
+All rights reserved.
+Use and modification of the code requires the author's permission.
+
+This project includes embedded comments in HTML files
+with version history and authorship.
+Do not remove these comments.
+
+============================
+🔸 WERSJA POLSKA  
+============================
+
+Historia wersji:
+v1.1.0 (2025-09-15) Angielski międzynarodowy & poprawki błędów
+v1.0.1 (2025-09-14) Poprawki błędów
+v1.0.0 (2025-09-13) Start nowej strony www
+
+Autor: Adrian Ulbrych  
+Lokalizacja: Gliwice, Śląsk, Polska  
+Kontakt: +48 601 190 330  
+
+Wszystkie prawa zastrzeżone.  
+Użycie i modyfikacja kodu wymaga zgody autora.  
+
+Projekt zawiera komentarze w plikach HTML  
+z historią wersji i informacją o autorze.  
+Nie usuwaj tych komentarzy.
+
+============================
+
+⠀⠀⠀⠀⠀⠀⠘⢄⠀⢰⠁⠀⢀⣠⠜  
+⠀⠀⠀⠀⠀⠀⠀⠀⡆⢸⠀⠀⡏  
+⠀⠀⠀⠀⠀⠀⠀⠀⢇⠀⠃⠀⢈  
+⠀⠀⠀⢀⣤⣶⠾⠿⠛⠛⠛⠛⠛⠿⠿⣶⣤⣀  
+⠀⣠⡾⠋⠁⠀⠀⠀⢀⣠⣤⠤⢤⣤⣄⠀⠈⠙⢿⣦  
+⣸⡏⠀⠀⠀⣀⣤⠾⠋⠁⠀⠀⠀⣸⠟⠀⠀⠀⠀⠹⣷  
+⣿⣇⠀⠀⠀⠙⠳⢦⣄⡀⠀⠀⠈⢳⣦⠀⠀⠀⠀⣰⣿  
+⢹⣿⣶⣤⣀⠀⠀⠀⠈⠙⠳⠶⠶⠿⠋⠀⢀⣤⣾⣿⣿⣶⣶⣦⡀  
+⠘⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣤⣶⣶⣿⣿⣿⣿⣿⠋⠉⠙⣿⣧  
+⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⠀⠀⢠⣿⡿  
+⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣶⣶⣿⡿  
+⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠈⠉⠉⠁  
+⠀⠀⠀⠀⠀⠈⠛⠻⢿⣿⣿⣿⡿⠿⠛⠁  
+
+© 2025 Adrian Ulbrych – All rights reserved  
+Project page: https://adrian-x9.github.io/ 
+
+Do not remove these comments. -->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoszMet - Nowoczesne Konstrukcje Stalowe</title>
+    <meta name="description" content="HoszMet to lider w branży stalowej. Oferujemy kompleksowe usługi związane z obróbką, cięciem i dostawą stali.">
+    <meta name="keywords" content="konstrukcje stalowe, sprzedaż stali, cięcie blach, spawanie, HoszMet, Sośnicowice">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root {
+            --color-primary: #E57200; 
+            --color-secondary: rgb(0, 69, 131);
+            --color-dark: #1a1a1a;
+            --color-medium-dark: #3a3a3a;
+            --color-gray: #808080;
+            --color-light-gray: #d1d5db; 
+            --color-light: #f4f4f4;
+            --color-text: #333;
+            --color-text-light: #e0e0e0;
+            --font-primary: 'Poppins', sans-serif;
+            --header-height: 80px;
+            --transition-speed: 0.5s;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { font-family: var(--font-primary); line-height: 1.7; background-color: var(--color-light); color: var(--color-text); overflow-x: hidden; }
+        h1, h2, h3 { font-weight: 600; line-height: 1.2; margin-bottom: 1rem; color: var(--color-dark); }
+        h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; position: relative; }
+        h2::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); }
+        p { margin-bottom: 1rem; }
+        a { text-decoration: none; color: var(--color-primary); transition: color var(--transition-speed) ease; }
+        a:hover { color: var(--color-secondary); }
+        img { max-width: 100%; display: block; }
+        
+        #kontakt { padding-bottom: 2rem 0; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 6rem 0; overflow: hidden; position: relative; }
+        section[id] { scroll-margin-top: var(--header-height); }
+        .hidden { display: none !important; }
+        #kontakt { padding-bottom: 0 }
+
+        /* Corrected Shadow Separator Styles */
+        #o-firmie, #oferta, #animation-section-wrapper, #kontakt {
+            box-shadow: 0 -10px 15px -12px rgba(0,0,0,0.12);
+        }
+        #lokalizacja {
+            box-shadow: 0 10px 15px -12px rgba(0,0,0,0.12);
+        }
+
+        #loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--color-dark); display: flex; justify-content: center; align-items: center; z-index: 10000; transition: opacity 0.75s ease, visibility 0.75s ease; }
+        #loader.hidden { opacity: 0; visibility: hidden; }
+        .spinner { width: 60px; height: 60px; border: 5px solid rgba(255, 255, 255, 0.2); border-top-color: var(--color-primary); border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        header { position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height); display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; background-color: rgba(26, 26, 26, 0.8); z-index: 1000; transition: background-color var(--transition-speed) ease; }
+        .logo-wrapper { display: flex; align-items: center; gap: 15px; }
+        #header-logo-flipper-container { perspective: 150px; width: 35px; height: 35px; }
+        #header-logo-flipper { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform 1s; }
+        #header-logo-img { width: 100%; height: 100%; object-fit: cover; }
+        .logo-animated { font-size: 2.2rem; font-weight: 700; background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-primary)); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: gradient-flow 4s linear infinite; margin: 0; }
+        @keyframes gradient-flow { 0% { background-position: 0% center; } 100% { background-position: 200% center; } }
+
+        .contact-icons a { color: white; font-size: 1.5rem; margin-left: 1.5rem; transition: transform 0.3s ease, color 0.3s ease; }
+        .contact-icons a:hover { color: var(--color-primary); transform: scale(1.2); }
+
+        #hero { height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; color: white; padding: 0; }
+        #hero::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 1; transition: background-color 1s ease; }
+        
+        .video-background { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; transition: opacity 1s ease-in-out; }
+        #hero-slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; transition: opacity 1s ease-in-out; }
+
+        #bg-video, #oferta .video-background video { width: 100%; height: 100%; object-fit: cover; }
+        .hero-content { z-index: 2; max-width: 900px; padding: 2rem; }
+        .hero-content h1 { font-size: 3.5rem; font-weight: 700; margin-bottom: 1rem; color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+        .hero-content h1 .hero-hosz { color: var(--color-primary); }
+        .hero-content h1 .hero-met { color: var(--color-gray); }
+        .hero-content p { font-size: 1.2rem; font-weight: 300; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); }
+
+        #toggle-media-btn { position: absolute; top: calc(var(--header-height) + 20px); right: 20px; width: 40px; height: 40px; background-color: rgba(255, 255, 255, 0.2); color: white; border: 1px solid white; border-radius: 50%; font-size: 1.5rem; font-weight: bold; cursor: pointer; z-index: 1001; transition: all 0.3s ease; display: flex; justify-content: center; align-items: center; }
+        #toggle-media-btn:hover { background-color: var(--color-primary); transform: scale(1.1) rotate(90deg); border-color: var(--color-primary); }
+        #toggle-media-btn .fa-play { font-size: 1.2rem; }
+
+
+        .slideshow-container { width: 100%; height: 100%; position: relative; overflow: hidden; }
+        .slideshow-container img { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 1.5s ease-in-out; }
+        .slideshow-container img.active { opacity: 1; }
+
+        #oferta { background-color: transparent; }
+        #oferta .container { position: relative; z-index: 2; }
+        #oferta::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.1); z-index: 0; }
+        #oferta .video-background { z-index: -1; }
+        #oferta h2 { color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+        #oferta h2::after { background: white; }
+        .oferta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; text-align: center; }
+        .oferta-item { padding: 2rem; background: rgba(255,255,255,0.9); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(221, 221, 221, 0.5); border-radius: 8px; transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease; }
+        .oferta-item:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .oferta-item .icon { font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem; }
+        .oferta-item h3 { font-size: 1.5rem; color: var(--color-secondary); }
+        
+        .kontakt-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 0rem; align-items: center; }
+        .kontakt-info, .address-box { display: flex; justify-content: center; align-items: center; }
+        .kontakt-info-inner, .address-box-inner { width: fit-content; }
+        .kontakt-info p { font-size: 1.1rem; margin-bottom: 1.5rem; display: flex; align-items: center; }
+        .kontakt-info i { margin-right: 15px; color: var(--color-primary); width: 20px; text-align: center; }
+        .address-box { padding: 2rem; border-left: 3px solid var(--color-primary); align-self: stretch; }
+        .address-box h3 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+        .address-box .hosz-style { color: var(--color-primary); }
+        .ade-style { color: #f00000; }
+        .address-box .met-style { color: var(--color-medium-dark); }
+        .address-box p { margin-bottom: 0.5rem; line-height: 1.8; text-align: left; }
+        
+        #lokalizacja .container { max-width: 900px; }
+        #lokalizacja a { display: block; transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 5px; overflow: hidden; }
+        #lokalizacja a:hover { transform: scale(1.02); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
+        #lokalizacja img { border-radius: 5px; width: 100%; }
+        
+        #animation-section-wrapper { padding: 3rem 0; min-height: auto; display: flex; align-items: center; justify-content: center; background-color: white; }
+        .frame-animation-container { height: 60vh; max-height: 600px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); width: 100%; max-width: 1067px; background-color: var(--color-dark); position: relative; overflow: hidden; }
+        .frame-animation-container img { width: 100%; height: 100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.4s ease-in-out; object-fit: cover; }
+        .frame-animation-container img.active { opacity: 1; }
+        
+        #o-firmie .container { max-width: 900px; }
+        
+        /* CORRECTED FOOTER STYLES */
+        footer { background-color: var(--color-dark); color: var(--color-text-light); padding: 4rem 0; position: relative; }
+        .footer-wrapper { display: grid; grid-template-columns: 1fr 2fr; align-items: center; gap: 2rem; }
+        #footer-slideshow { width: 150px; height: 150px; border-radius: 8px; overflow: hidden; justify-self: end; }
+        .footer-content { text-align: left; }
+        .footer-content h3 { font-size: 1.8rem; color: white; }
+        .footer-content .hosz-style { color: var(--color-primary); }
+        .footer-content .met-style { color: var(--color-light-gray); }
+        .footer-content p { margin: 0.5rem 0; }
+        .footer-privacy { font-size: 0.8rem; opacity: 0.7; margin-top: 1rem; }
+        .footer-content a { color: var(--color-text-light); text-decoration: none; border-bottom: 1px dotted var(--color-text-light); transition: color var(--transition-speed), border-bottom-color var(--transition-speed); }
+        .footer-content a:hover { color: var(--color-primary); border-bottom-color: var(--color-primary); }
+        .back-to-top { position: absolute; bottom: 2rem; right: 2rem; width: 45px; height: 45px; background-color: var(--color-primary); color: white; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; border-radius: 8px; transition: all var(--transition-speed) ease; z-index: 2; }
+        .back-to-top:hover { background-color: var(--color-secondary); transform: translateY(-5px); color: white; }
+
+
+        .reveal { opacity: 0; transition: opacity 1s ease-out, transform 1s ease-out; will-change: opacity, transform; }
+        .reveal.from-left { transform: translateX(-100px); }
+        .reveal.from-right { transform: translateX(100px); }
+        .reveal.is-visible { opacity: 1; transform: translateX(0); }
+        
+        /* New Footer Media Query */
+        @media (max-width: 999px) {
+            .footer-wrapper {
+                grid-template-columns: 1fr;
+            }
+            #footer-slideshow {
+                justify-self: center;
+                margin-bottom: 2rem;
+            }
+            .footer-content {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 992px) {
+            h2 { font-size: 2rem; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .kontakt-wrapper { grid-template-columns: 1fr; }
+            .address-box { border-left: none; border-top: 3px solid var(--color-primary); text-align: center; margin-top: 2rem; padding-top: 2rem; }
+            .address-box p { text-align: center; }
+        }
+        @media (max-width: 768px) {
+            :root { --header-height: 60px; }
+            header { padding: 0 1rem; }
+            .logo-animated { font-size: 1.8rem; }
+            #header-logo-flipper-container { width: 30px; height: 30px; }
+            .contact-icons a { font-size: 1.2rem; margin-left: 1rem; }
+            section { padding: 4rem 0; }
+            #animation-section-wrapper { padding: 2rem 0; }
+            .container { padding: 0 1rem; }
+            .back-to-top { bottom: 1rem; right: 1rem; width: 40px; height: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <div class="logo-wrapper">
+             <div id="header-logo-flipper-container">
+                <div id="header-logo-flipper">
+                    <img id="header-logo-img" src="" alt="HoszMet Logo">
+                </div>
+            </div>
+            <h1 class="logo-animated">HoszMet</h1>
+        </div>
+        <div class="contact-icons">
+            <a href="index-en.html" aria-label="Switch to English version"><i class="fas fa-globe"></i></a>
+            <a href="#kontakt" aria-label="Napisz do nas"><i class="fas fa-envelope"></i></a>
+            <a id="phone-link" href="#" aria-label="Zadzwoń do nas"><i class="fas fa-phone"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="video-background">
+                <video playsinline autoplay muted loop id="bg-video" poster="./gfx/photoh1.png">
+                    <source src="./video/bg1.mp4" type="video/mp4">
+                    Twoja przeglądarka nie obsługuje tagu wideo.
+                </video>
+            </div>
+            <div id="hero-slideshow-container" class="slideshow-container hidden"></div>
+            <div class="hero-content">
+                <h1><span class="hero-hosz">Hosz</span><span class="hero-met">Met</span> - Trwałość i Nowoczesność w Stali</h1>
+                <p>Projektujemy, produkujemy i montujemy konstrukcje stalowe najwyższej jakości, dopasowane do Twoich potrzeb.</p>
+            </div>
+            <button id="toggle-media-btn" aria-label="Wyłącz wideo i pokaż realizacje">X</button>
+        </section>
+
+        <section id="o-firmie" class="reveal from-left">
+            <div class="container">
+                <h2>O nas</h2>
+                <p>Firma HoszMet to lokalny lider w branży stalowej. Projektujemy, wykonujemy i montujemy konstrukcje stalowe, dopasowane do Twoich potrzeb. Zabudowujemy płytą warstwową i blachą trapezową. Działamy na rynku od wielu lat, łącząc doświadczenie z nowoczesnymi rozwiązaniami technologicznymi.</p>
+            </div>
+        </section>
+
+        <section id="oferta" class="reveal from-right">
+             <div class="video-background">
+                <video playsinline autoplay muted loop>
+                    <source src="./video/bg2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <h2>Nasza oferta</h2>
+                <div class="oferta-grid">
+                    <div class="oferta-item"> <div class="icon"><i class="fas fa-layer-group"></i></div> <h3>Sprzedaż stali</h3> <p>Oferujemy szeroki asortyment stali konstrukcyjnej i nierdzewnej najwyższej jakości.</p> </div>
+                    <div class="oferta-item"> <div class="icon"><i class="fas fa-clone"></i></div> <h3>Płyty Warstwowe i Blachy</h3> <p>Zabudowujemy konstrukcje płytą warstwową i blachą trapezową, zapewniając trwałość i estetykę.</p> </div>
+                    <div class="oferta-item"> <div class="icon"><i class="fas fa-tools"></i></div> <h3>Spawanie i prefabrykacja</h3> <p>Wykonujemy trwałe elementy stalowe na zamówienie, gotowe do montażu na miejscu inwestycji.</p> </div>
+                    <div class="oferta-item"> <div class="icon"><i class="fas fa-headset"></i></div> <h3>Doradztwo techniczne</h3> <p>Nasi eksperci pomogą w doborze optymalnych rozwiązań i materiałów dla Twojego projektu.</p> </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="animation-section-wrapper" class="reveal from-left">
+            <div id="frame-animation-container" class="frame-animation-container"></div>
+        </section>
+
+        <section id="kontakt" class="reveal from-right">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <div class="kontakt-wrapper">
+                    <div class="kontakt-info">
+                        <div class="kontakt-info-inner">
+                            <p><i class="fas fa-map-marker-alt"></i>ul. Powstańców 34<br>44-153 Sośnicowice</p>
+                            <p><i class="fas fa-phone"></i><a id="contact-phone-link" href="#"></a></p>
+                            <p><i class="fas fa-envelope"></i><a id="email-link" href="#"></a></p>
+                            <p><i class="fas fa-globe"></i><a href="http://www.hoszmet.pl" target="_blank">www.hoszmet.pl</a></p>
+                        </div>
+                    </div>
+                    <div class="address-box">
+                        <div class="address-box-inner">
+                            <h3><b class="hosz-style">Hosz</b><b class="met-style">Met</b></h3>
+                            <p>ul. Powstańców 34</p>
+                            <p>44-153 Sośnicowice</p>
+                            <p>NIP: 9691525594</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lokalizacja" class="reveal from-left">
+            <div class="container">
+                <h2>Lokalizacja</h2>
+                <a id="map-link" href="#" target="_blank">
+                    <img id="map-image" src="" alt="Mapa dojazdu do siedziby firmy HoszMet">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <div class="container footer-wrapper">
+            <div id="footer-slideshow" class="slideshow-container"></div>
+            <div class="footer-content">
+                <h3><b class="hosz-style">Hosz</b><b class="met-style">Met</b></h3>
+                <p>© 2025 <a href="http://www.hoszmet.pl" target="_blank">HoszMet</a>. Realizacja: <a href="http://www.ade.pl" target="_blank"><strong>ade</strong></a>. Wszelkie prawa zastrzeżone.</p>
+                <p class="footer-privacy">Strona wykorzystuje pliki cookies w celu zapewnienia najwyższej jakości usług. Dalsze korzystanie z witryny oznacza zgodę na ich użycie. Szanujemy Twoją prywatność.</p>
+            </div>
+       </div>
+       <a href="#" class="back-to-top" aria-label="Powrót do góry"><i class="fas fa-chevron-up"></i></a>
+    </footer>
+
+    <script>
+    (function() {
+        'use strict';
+
+        const config = {
+            bgVideo: true,
+            logo1: "logo1.png",
+            logo2: "logo2.png",
+            map: "./gfx/map.png",
+            photoHCycle: 3000,
+            photoSqCycle: 4000,
+            frameAnimationInterval: 3000,
+            phone: "697 232 228"
+        };
+
+        const GFX_PATH = './gfx/';
+        const horizontalPhotos = ['photoh1.png', 'photoh2.png', 'photoh3.png', 'photoh4.png', 'photoh5.png', 'photoh6.png'];
+        const squarePhotos = ['photosq1.png', 'photosq2.png', 'photosq3.png', 'photosq4.png'];
+        const logoFiles = [config.logo1, config.logo2];
+
+        const loader = document.getElementById('loader');
+        const heroSection = document.getElementById('hero');
+        const videoContainer = document.querySelector('#hero .video-background');
+        const bgVideo = document.getElementById('bg-video');
+        const ofertaVideo = document.querySelector('#oferta .video-background video');
+        const heroSlideshowContainer = document.getElementById('hero-slideshow-container');
+        const toggleMediaBtn = document.getElementById('toggle-media-btn');
+        const footerSlideshowContainer = document.getElementById('footer-slideshow');
+        const frameAnimationContainer = document.getElementById('frame-animation-container');
+        let videosAreOn = true;
+        
+        function hideLoader() {
+            loader.classList.add('hidden');
+        }
+
+        function toggleAllVideos() {
+            if (videosAreOn) {
+                // Turn videos OFF
+                bgVideo.pause();
+                if (ofertaVideo) ofertaVideo.pause();
+                videoContainer.style.opacity = '0';
+                
+                setTimeout(() => {
+                    videoContainer.classList.add('hidden');
+                    heroSlideshowContainer.classList.remove('hidden');
+                }, 1000); // Sync with CSS transition
+                
+                toggleMediaBtn.innerHTML = '<i class="fas fa-play"></i>';
+                toggleMediaBtn.setAttribute('aria-label', 'Włącz wideo');
+            } else {
+                // Turn videos ON
+                videoContainer.classList.remove('hidden');
+                
+                // Delay to allow display property to apply before transition
+                setTimeout(() => {
+                    videoContainer.style.opacity = '1';
+                    heroSlideshowContainer.classList.add('hidden');
+                    bgVideo.play();
+                    if (ofertaVideo) ofertaVideo.play();
+                }, 50);
+
+                toggleMediaBtn.innerHTML = 'X';
+                toggleMediaBtn.setAttribute('aria-label', 'Wyłącz wideo i pokaż realizacje');
+            }
+            videosAreOn = !videosAreOn;
+        }
+
+        function initSlideshow(container, images, interval) {
+            if (!container || !images || images.length === 0) return;
+            container.innerHTML = '';
+            let currentIndex = 0;
+            const imageElements = images.map((imgName, index) => {
+                const img = document.createElement('img');
+                img.src = GFX_PATH + imgName;
+                img.alt = `Slajd ${index + 1}`;
+                if (index === 0) img.classList.add('active');
+                container.appendChild(img);
+                return img;
+            });
+            
+            if (images.length > 1) {
+                 setInterval(() => {
+                    if (document.hidden) return;
+                    imageElements[currentIndex].classList.remove('active');
+                    currentIndex = (currentIndex + 1) % images.length;
+                    imageElements[currentIndex].classList.add('active');
+                }, interval);
+            }
+        }
+        
+        function initHeaderLogoAnimation() {
+            const flipper = document.getElementById('header-logo-flipper');
+            const imgElement = document.getElementById('header-logo-img');
+            if (!flipper || !imgElement || !logoFiles || logoFiles.length < 2) return;
+
+            let currentIndex = 0;
+            let currentRotation = 0;
+            imgElement.src = GFX_PATH + logoFiles[currentIndex];
+
+            setInterval(() => {
+                if (document.hidden) return;
+                currentRotation -= 180;
+                flipper.style.transform = `rotateY(${currentRotation}deg)`;
+                
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % logoFiles.length;
+                    imgElement.src = GFX_PATH + logoFiles[currentIndex];
+                }, 500);
+
+            }, config.photoHCycle + 250);
+        }
+        
+        function initScrollAnimations() {
+            const revealElements = document.querySelectorAll('.reveal');
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+            revealElements.forEach(el => {
+                if(!el.classList.contains('is-visible')) observer.observe(el);
+            });
+        }
+
+        function setupDynamicContent() {
+            const phoneLink = `tel:${config.phone.replace(/\s/g, '')}`;
+            document.getElementById('phone-link').href = phoneLink;
+            
+            const contactPhoneLink = document.getElementById('contact-phone-link');
+            contactPhoneLink.href = phoneLink;
+            contactPhoneLink.textContent = config.phone;
+
+            const emailLink = document.getElementById('email-link');
+            const user = 'biuro';
+            const domain = 'hoszmet.pl';
+            emailLink.textContent = `${user} (małpka) ${domain}`;
+            emailLink.href = `mailto:${user}@${domain}`;
+
+            document.getElementById('map-image').src = config.map;
+            document.getElementById('map-link').href = 'https://www.google.com/maps/place/Powsta%C5%84c%C3%B3w+34,+44-153+So%C5%9Bnicowice/@50.2682631,18.5157251,17z/data=!3m1!4b1!4m6!3m5!1s0x4711397a8e23c41d:0xc6652e02fefdf874!8m2!3d50.2682632!4d18.5206014!16s%2Fg%2F11fpv9fwgp?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setupDynamicContent();
+            initHeaderLogoAnimation();
+            initSlideshow(footerSlideshowContainer, squarePhotos, config.photoSqCycle);
+            initSlideshow(heroSlideshowContainer, horizontalPhotos, config.photoHCycle); 
+            initSlideshow(frameAnimationContainer, horizontalPhotos, config.frameAnimationInterval);
+            initScrollAnimations();
+
+            toggleMediaBtn.addEventListener('click', toggleAllVideos);
+            
+            if (!config.bgVideo) {
+                toggleAllVideos();
+            }
+        });
+
+        window.addEventListener('load', hideLoader);
+
+    })();
+    </script>
+</body>
+</html>

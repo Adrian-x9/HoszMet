@@ -1,0 +1,21 @@
+# Pliki systemowe Mac i Windows
+.DS_Store
+Thumbs.db
+
+# Pliki konfiguracyjne popularnych edytorów kodu
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Pliki logów i błędów
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Foldery z zależnościami (jeśli kiedyś dodasz np. JavaScript)
+node_modules/
+
+# Pliki ze zmiennymi środowiskowymi (bardzo ważne!)
+.env
+.env.local
