@@ -16,7 +16,7 @@ Location: Gliwice, Silesia, Poland
 Contact: +48 601 190 330
 
 All rights reserved.
-Use and modification under MIT license.
+Use and modification of the code under MIT license.
 
 This project includes embedded comments in HTML files
 with version history and authorship.
@@ -32,11 +32,11 @@ v1.0.1 (2025-09-14) Poprawki błędów
 v1.0.0 (2025-09-13) Start nowej strony www
 
 Autor: ade Adrian Ulbrych & HoszMet
-Lokalizacja: Gliwice, Śląsk, Polska
-Kontakt: +48 601 190 330
+Lokalizacja: Gliwice, Śląsk, Polska  
+Kontakt: +48 601 190 330  
 
 Wszystkie prawa zastrzeżone.  
-Użycie i modyfikacja pod licencją MIT.
+Użycie i modyfikacja kodu na licencji MIT. 
 
 Projekt zawiera komentarze w plikach HTML  
 z historią wersji i informacją o autorze.  
@@ -59,6 +59,6 @@ Nie usuwaj tych komentarzy.
 ⠀⠀⠀⠀⠀⠈⠛⠻⢿⣿⣿⣿⡿⠿⠛⠁  
 
 © 2025 Adrian Ulbrych – All rights reserved  
-Project page: https://github.com/Adrian-x9/HoszMet
+Project page: https://adrian-x9.github.io/HoszMet/
 
 Do not remove these comments. -->
