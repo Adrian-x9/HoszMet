@@ -1,0 +1,51 @@
+        // =================================================================
+        // 🔸 LANGUAGE STRINGS (POLISH)
+        // =================================================================
+
+        const langStrings = {
+            metaTitle: "HoszMet - Nowoczesne Konstrukcje Stalowe",
+            metaDescription: "HoszMet to lider w branży stalowej. Oferujemy kompleksowe usługi związane z montażem konstrukcji stalowych, spawaniem i zabudową płytami warstwowymi.",
+            metaKeywords: "konstrukcje stalowe, montaż hal, spawanie, płyty warstwowe, HoszMet, Sośnicowice",
+            
+            phone: "697 232 228",
+
+            videoNotSupported: "Twoja przeglądarka nie obsługuje tagu wideo.",
+
+            heroTitle: '<span class="hero-hosz">Hosz</span><span class="hero-met">Met</span> - Trwałość i Nowoczesność w Stali',
+            heroSubtitle: 'Projektujemy, produkujemy i montujemy konstrukcje stalowe najwyższej jakości, dopasowane do Twoich potrzeb.',
+            
+            toggleVideoBtn_On: "Wyłącz wideo i pokaż realizacje",
+            toggleVideoBtn_Off: "Włącz wideo",
+
+            aboutUsTitle: "O nas",
+            aboutUsText: "Firma HoszMet to lokalny lider w branży stalowej. Projektujemy, wykonujemy i montujemy konstrukcje stalowe, dopasowane do Twoich potrzeb. Zabudowujemy płytą warstwową i blachą trapezową. Działamy na rynku od wielu lat, łącząc doświadczenie z nowoczesnymi rozwiązaniami technologicznymi.",
+            
+            offerTitle: "Nasza oferta",
+            offerItems: [
+                { icon: "fas fa-building-user", title: "Montaż konstrukcji stalowych", text: "Specjalizujemy się w profesjonalnym montażu hal, magazynów i innych obiektów opartych na konstrukcjach stalowych." },
+                { icon: "fas fa-tools", title: "Spawanie i prefabrykacja", text: "Wykonujemy trwałe elementy stalowe na zamówienie, gotowe do montażu na miejscu inwestycji." },
+                { icon: "fas fa-clone", title: "Płyty Warstwowe i Blachy", text: "Zabudowujemy konstrukcje płytą warstwową i blachą trapezową, zapewniając trwałość i estetykę." },
+                { icon: "fas fa-headset", title: "Doradztwo techniczne", text: "Nasi eksperci pomogą w doborze optymalnych rozwiązań i materiałów dla Twojego projektu." }
+            ],
+            
+            toggleOfertaVideoBtn_On: "Zatrzymaj wideo",
+            toggleOfertaVideoBtn_Off: "Wznów wideo",
+            nextOfertaVideoBtn: "Następne wideo",
+            
+            contactTitle: "Kontakt",
+            contactAddress: "ul. Powstańców 34<br>44-153 Sośnicowice",
+            contactAddressBoxLine1: "ul. Powstańców 34",
+            contactAddressBoxLine2: "44-153 Sośnicowice",
+            contactCountry: "",
+            contactNIP: "NIP: 9691525594",
+            
+            locationTitle: "Lokalizacja",
+            locationMapAlt: "Mapa dojazdu do siedziby firmy HoszMet",
+
+            footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Projekt i Realizacja: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Wszelkie prawa zastrzeżone.",
+            footerPrivacy: "Strona wykorzystuje pliki cookies w celu zapewnienia najwyższej jakości usług. Dalsze korzystanie z witryny oznacza zgodę na ich użycie. Szanujemy Twoją prywatność.",
+            
+            backToTopAria: "Powrót do góry",
+            
+            loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Wystąpił błąd ładowania.<br>Prosimy odświeżyć stronę.'
+        };

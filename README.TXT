@@ -1,0 +1,66 @@
+<!-- Do not remove these comments.
+
+============================  
+🔹 ENGLISH VERSION  
+============================  
+
+Version History:
+v2.1.0 (2025-09-23) Background video replaced with a slider featuring multiple videos
+v2.0.0 (2025-09-23) German, Czech, and Slovak languages added  
+v1.1.0 (2025-09-15) International English and correction fixes  
+v1.0.1 (2025-09-14) Correction fixes  
+v1.0.0 (2025-09-13) Website launched  
+
+Author: ade Adrian Ulbrych & HoszMet
+Location: Gliwice, Silesia, Poland
+Contact: +48 601 190 330
+
+All rights reserved.
+Use and modification of the code under MIT license.
+
+This project includes embedded comments in HTML files
+with version history and authorship.
+Do not remove these comments.
+
+============================
+🔸 WERSJA POLSKA  
+============================
+
+Historia wersji:
+v2.1.0 (2025-09-23) Zmieniono wideo w tle na slider z wieloma filmami
+v2.0.0 (2025-09-23) Dodano wersje językowe: niemiecką, czeską i słowacką
+v1.1.0 (2025-09-15) Angielski międzynarodowy & poprawki błędów
+v1.0.1 (2025-09-14) Poprawki błędów
+v1.0.0 (2025-09-13) Start nowej strony www
+
+Autor: ade Adrian Ulbrych & HoszMet
+Lokalizacja: Gliwice, Śląsk, Polska  
+Kontakt: +48 601 190 330  
+
+Wszystkie prawa zastrzeżone.  
+Użycie i modyfikacja kodu na licencji MIT. 
+
+Projekt zawiera komentarze w plikach HTML  
+z historią wersji i informacją o autorze.  
+Nie usuwaj tych komentarzy.
+
+============================
+
+⠀⠀⠀⠀⠀⠀⠘⢄⠀⢰⠁⠀⢀⣠⠜  
+⠀⠀⠀⠀⠀⠀⠀⠀⡆⢸⠀⠀⡏  
+⠀⠀⠀⠀⠀⠀⠀⠀⢇⠀⠃⠀⢈  
+⠀⠀⠀⢀⣤⣶⠾⠿⠛⠛⠛⠛⠛⠿⠿⣶⣤⣀  
+⠀⣠⡾⠋⠁⠀⠀⠀⢀⣠⣤⠤⢤⣤⣄⠀⠈⠙⢿⣦  
+⣸⡏⠀⠀⠀⣀⣤⠾⠋⠁⠀⠀⠀⣸⠟⠀⠀⠀⠀⠹⣷  
+⣿⣇⠀⠀⠀⠙⠳⢦⣄⡀⠀⠀⠈⢳⣦⠀⠀⠀⠀⣰⣿  
+⢹⣿⣶⣤⣀⠀⠀⠀⠈⠙⠳⠶⠶⠿⠋⠀⢀⣤⣾⣿⣿⣶⣶⣦⡀  
+⠘⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣤⣶⣶⣿⣿⣿⣿⣿⠋⠉⠙⣿⣧  
+⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⠀⠀⢠⣿⡿  
+⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣶⣶⣿⡿  
+⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠈⠉⠉⠁  
+⠀⠀⠀⠀⠀⠈⠛⠻⢿⣿⣿⣿⡿⠿⠛⠁  
+
+© 2025 Adrian Ulbrych – All rights reserved  
+Project page: https://adrian-x9.github.io/HoszMet/
+
+Do not remove these comments. -->

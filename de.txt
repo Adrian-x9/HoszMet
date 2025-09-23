@@ -1,0 +1,50 @@
+const langStrings = {
+    // Meta-Tags: Die Übersetzung ist SEO-optimiert. "Stahlkonstruktionen" und "Stahlbau" sind Standardbegriffe der Branche.
+    metaTitle: "HoszMet - Moderne Stahlkonstruktionen",
+    metaDescription: "HoszMet ist ein führendes Unternehmen in der Stahlbranche. Wir bieten umfassende Dienstleistungen rund um die Montage von Stahlkonstruktionen, Schweißarbeiten und die Verkleidung mit Sandwichplatten.",
+    metaKeywords: "Stahlkonstruktionen, Stahlbau, Hallenmontage, Schweißarbeiten, Sandwichplatten, HoszMet, Sośnicowice",
+
+    // Video-Meldung: Technische Standardmeldung.
+    videoNotSupported: "Ihr Browser unterstützt das Video-Tag nicht.",
+
+    // Hauptbereich (Hero): Die Übersetzung ist dynamisch und bewahrt ein professionelles Markenimage.
+    heroTitle: '<span class="hero-hosz">Hosz</span><span class="hero-met">Met</span> - Beständigkeit und Modernität aus Stahl',
+    heroSubtitle: 'Wir entwerfen, fertigen und montieren hochwertigste Stahlkonstruktionen, maßgeschneidert nach Ihren Bedürfnissen.',
+    
+    // Buttons: Klare und prägnante Handlungsaufforderungen (Call-to-Action).
+    toggleVideoBtn_On: "Video deaktivieren und Projekte anzeigen",
+    toggleVideoBtn_Off: "Video aktivieren",
+
+    // Über uns: Der Text klingt professionell und schafft Vertrauen. "Fertigen" ist präziser als das allgemeine "machen".
+    aboutUsTitle: "Über uns",
+    aboutUsText: "HoszMet ist ein lokal führendes Unternehmen in der Stahlbranche. Wir entwerfen, fertigen und montieren maßgeschneiderte Stahlkonstruktionen. Wir übernehmen die Verkleidung mit Sandwichplatten und Trapezblechen. Seit vielen Jahren am Markt tätig, verbinden wir Erfahrung mit modernen technologischen Lösungen.",
+    
+    // Angebot: Es wurde gängige Branchenterminologie verwendet. Die Übersetzung ist klar und ansprechend.
+    offerTitle: "Unser Angebot",
+    offerItems: [
+        { icon: "fas fa-building-user", title: "Montage von Stahlkonstruktionen", text: "Wir sind auf die professionelle Montage von Hallen, Lagerhäusern und anderen Objekten auf Basis von Stahlkonstruktionen spezialisiert." },
+        { icon: "fas fa-tools", title: "Schweißarbeiten und Vorfertigung", text: "Wir produzieren langlebige Stahlelemente nach Maß, fertig zur Montage auf der Baustelle." },
+        { icon: "fas fa-clone", title: "Sandwichplatten und Bleche", text: "Wir verkleiden Konstruktionen mit Sandwichplatten und Trapezblechen, die für Langlebigkeit und Ästhetik sorgen." },
+        { icon: "fas fa-headset", title: "Technische Beratung", text: "Unsere Experten helfen Ihnen bei der Auswahl der optimalen Lösungen und Materialien für Ihr Projekt." }
+    ],
+    
+    // Kontakt: Standardmäßige und verständliche Kontaktinformationen.
+    contactTitle: "Kontakt",
+    contactAddress: "ul. Powstańców 34<br>44-153 Sośnicowice",
+    contactAddressBoxLine1: "ul. Powstańców 34",
+    contactAddressBoxLine2: "44-153 Sośnicowice",
+    contactNIP: "USt-IdNr.: 9691525594", // NIP ist die polnische Steuernummer. USt-IdNr. ist der deutsche/EU-Standard und für deutsche Kunden verständlicher.
+
+    // Standort: Für deutschsprachige Benutzer verständlich.
+    locationTitle: "Standort",
+    locationMapAlt: "Karte mit Anfahrtsbeschreibung zum Hauptsitz von HoszMet",
+
+    // Fußzeile: Rechtliche Standardformulierungen. "Gestaltung und Umsetzung" ist eine gängige Formulierung.
+    footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Gestaltung und Umsetzung: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Alle Rechte vorbehalten.",
+    footerPrivacy: "Diese Webseite verwendet Cookies, um Ihnen den bestmöglichen Service zu bieten. Durch die weitere Nutzung der Seite stimmen Sie der Verwendung zu. Wir respektieren Ihre Privatsphäre.",
+    
+    // Barrierefreiheit und Fehler: Standardmeldungen.
+    backToTopAria: "Nach oben",
+    
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Beim Laden ist ein Fehler aufgetreten.<br>Bitte laden Sie die Seite neu.'
+};

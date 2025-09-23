@@ -1,68 +1,3 @@
-<!-- Do not remove these comments.
-
-Last updated: 2025-09-15
-
-============================  
-🔹 ENGLISH VERSION  
-============================  
-
-Version history:  
-v1.1.0 (2025-09-15) International English & correction fixes
-v1.0.1 (2025-09-14) Correcton fixes
-v1.0.0 (2025-09-13) New website start
-
-Author: ade Adrian Ulbrych & HoszMet
-Location: Gliwice, Silesia, Poland
-Contact: +48 601 190 330
-
-All rights reserved.
-Use and modification of the code under MIT license.
-
-This project includes embedded comments in HTML files
-with version history and authorship.
-Do not remove these comments.
-
-============================
-🔸 WERSJA POLSKA  
-============================
-
-Historia wersji:
-v1.1.0 (2025-09-15) Angielski międzynarodowy & poprawki błędów
-v1.0.1 (2025-09-14) Poprawki błędów
-v1.0.0 (2025-09-13) Start nowej strony www
-
-Autor: ade Adrian Ulbrych & HoszMet
-Lokalizacja: Gliwice, Śląsk, Polska  
-Kontakt: +48 601 190 330  
-
-Wszystkie prawa zastrzeżone.  
-Użycie i modyfikacja kodu na licencji MIT. 
-
-Projekt zawiera komentarze w plikach HTML  
-z historią wersji i informacją o autorze.  
-Nie usuwaj tych komentarzy.
-
-============================
-
-⠀⠀⠀⠀⠀⠀⠘⢄⠀⢰⠁⠀⢀⣠⠜  
-⠀⠀⠀⠀⠀⠀⠀⠀⡆⢸⠀⠀⡏  
-⠀⠀⠀⠀⠀⠀⠀⠀⢇⠀⠃⠀⢈  
-⠀⠀⠀⢀⣤⣶⠾⠿⠛⠛⠛⠛⠛⠿⠿⣶⣤⣀  
-⠀⣠⡾⠋⠁⠀⠀⠀⢀⣠⣤⠤⢤⣤⣄⠀⠈⠙⢿⣦  
-⣸⡏⠀⠀⠀⣀⣤⠾⠋⠁⠀⠀⠀⣸⠟⠀⠀⠀⠀⠹⣷  
-⣿⣇⠀⠀⠀⠙⠳⢦⣄⡀⠀⠀⠈⢳⣦⠀⠀⠀⠀⣰⣿  
-⢹⣿⣶⣤⣀⠀⠀⠀⠈⠙⠳⠶⠶⠿⠋⠀⢀⣤⣾⣿⣿⣶⣶⣦⡀  
-⠘⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣤⣶⣶⣿⣿⣿⣿⣿⠋⠉⠙⣿⣧  
-⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⠀⠀⢠⣿⡿  
-⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣶⣶⣿⡿  
-⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠈⠉⠉⠁  
-⠀⠀⠀⠀⠀⠈⠛⠻⢿⣿⣿⣿⡿⠿⠛⠁  
-
-© 2025 Adrian Ulbrych – All rights reserved  
-Project page: https://adrian-x9.github.io/HoszMet/
-
-Do not remove these comments. -->
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -124,9 +59,11 @@ Do not remove these comments. -->
             box-shadow: 0 10px 15px -12px rgba(0,0,0,0.12);
         }
 
-        #loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--color-dark); display: flex; justify-content: center; align-items: center; z-index: 10000; transition: opacity 0.75s ease, visibility 0.75s ease; }
+        #loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--color-dark); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10000; transition: opacity 0.75s ease, visibility 0.75s ease; }
         #loader.hidden { opacity: 0; visibility: hidden; }
         .spinner { width: 60px; height: 60px; border: 5px solid rgba(255, 255, 255, 0.2); border-top-color: var(--color-primary); border-radius: 50%; animation: spin 1s linear infinite; }
+        .loader-error-message { color: var(--color-light-gray); margin-top: 2rem; font-size: 1.1rem; text-align: center; padding: 0 1rem; }
+        .loader-error-message i { color: #f00000; margin-bottom: 1rem; font-size: 2rem; }
         @keyframes spin { to { transform: rotate(360deg); } }
 
         header { position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height); display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; background-color: rgba(26, 26, 26, 0.8); z-index: 1000; transition: background-color var(--transition-speed) ease; }
@@ -137,8 +74,18 @@ Do not remove these comments. -->
         .logo-animated { font-size: 2.2rem; font-weight: 700; background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-primary)); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: gradient-flow 4s linear infinite; margin: 0; }
         @keyframes gradient-flow { 0% { background-position: 0% center; } 100% { background-position: 200% center; } }
 
-        .contact-icons a { color: white; font-size: 1.5rem; margin-left: 1.5rem; transition: transform 0.3s ease, color 0.3s ease; }
+        .contact-icons { display: flex; align-items: center; gap: 1.5rem; }
+        .contact-icons a { color: white; font-size: 1.5rem; transition: transform 0.3s ease, color 0.3s ease; }
         .contact-icons a:hover { color: var(--color-primary); transform: scale(1.2); }
+
+        /* Language Switcher Styles */
+        .lang-switcher { position: relative; }
+        .lang-switcher-button { background: none; border: none; cursor: pointer; color: white; font-size: 1.5rem; padding: 0; transition: transform 0.3s ease, color 0.3s ease; }
+        .lang-switcher-button:hover { color: var(--color-primary); transform: scale(1.2); }
+        .lang-switcher-menu { position: absolute; top: calc(100% + 15px); right: 0; background-color: rgba(26, 26, 26, 0.9); backdrop-filter: blur(5px); border-radius: 8px; list-style: none; padding: 0.5rem; margin: 0; display: none; flex-direction: column; gap: 0.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .lang-switcher-menu.show { display: flex; }
+        .lang-switcher-menu a { font-size: 1rem; color: white; text-transform: uppercase; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; display: block; text-align: center; }
+        .lang-switcher-menu a:hover { background-color: var(--color-primary); }
 
         #hero { height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; color: white; padding: 0; }
         #hero::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 1; transition: background-color 1s ease; }
@@ -146,7 +93,7 @@ Do not remove these comments. -->
         .video-background { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; transition: opacity 1s ease-in-out; }
         #hero-slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; transition: opacity 1s ease-in-out; }
 
-        #bg-video, #oferta .video-background video { width: 100%; height: 100%; object-fit: cover; }
+        #bg-video { width: 100%; height: 100%; object-fit: cover; }
         .hero-content { z-index: 2; max-width: 900px; padding: 2rem; }
         .hero-content h1 { font-size: 3.5rem; font-weight: 700; margin-bottom: 1rem; color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
         .hero-content h1 .hero-hosz { color: var(--color-primary); }
@@ -157,7 +104,6 @@ Do not remove these comments. -->
         #toggle-media-btn:hover { background-color: var(--color-primary); transform: scale(1.1) rotate(90deg); border-color: var(--color-primary); }
         #toggle-media-btn .fa-play { font-size: 1.2rem; }
 
-
         .slideshow-container { width: 100%; height: 100%; position: relative; overflow: hidden; }
         .slideshow-container img { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 1.5s ease-in-out; }
         .slideshow-container img.active { opacity: 1; }
@@ -165,7 +111,20 @@ Do not remove these comments. -->
         #oferta { background-color: transparent; }
         #oferta .container { position: relative; z-index: 2; }
         #oferta::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.1); z-index: 0; }
-        #oferta .video-background { z-index: -1; }
+        
+        /* Oferta Slider Styles */
+        #oferta-video-slider { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden; background-color: var(--color-dark); }
+        #oferta-video-slider video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.1); transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; }
+        #oferta-video-slider video.active { opacity: 1; transform: scale(1); }
+        #oferta-video-slider video.exiting { opacity: 0; transform: scale(0.95) translateX(-50%); }
+
+        #toggle-oferta-media-btn, #next-oferta-video-btn { position: absolute; background-color: rgba(255, 255, 255, 0.2); color: white; border: 1px solid white; border-radius: 50%; cursor: pointer; z-index: 3; transition: all 0.3s ease; display: flex; justify-content: center; align-items: center; }
+        #toggle-oferta-media-btn { top: 20px; right: 20px; width: 40px; height: 40px; font-size: 1.5rem; font-weight: bold; }
+        #toggle-oferta-media-btn:hover { background-color: var(--color-primary); transform: scale(1.1) rotate(90deg); border-color: var(--color-primary); }
+        #next-oferta-video-btn { bottom: 20px; right: 20px; width: 40px; height: 40px; font-size: 1.2rem; }
+        #next-oferta-video-btn:hover { background-color: var(--color-primary); border-color: var(--color-primary); animation: next-btn-anim 0.5s ease-out forwards; }
+        @keyframes next-btn-anim { 0% { transform: scale(1) translateX(0); } 50% { transform: scale(1.1) translateX(5px); } 100% { transform: scale(1) translateX(0); } }
+
         #oferta h2 { color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
         #oferta h2::after { background: white; }
         .oferta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; text-align: center; }
@@ -213,7 +172,6 @@ Do not remove these comments. -->
         .back-to-top { position: absolute; bottom: 2rem; right: 2rem; width: 45px; height: 45px; background-color: var(--color-primary); color: white; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; border-radius: 8px; transition: all var(--transition-speed) ease; z-index: 2; }
         .back-to-top:hover { background-color: var(--color-secondary); transform: translateY(-5px); color: white; }
 
-
         .reveal { opacity: 0; transition: opacity 1s ease-out, transform 1s ease-out; will-change: opacity, transform; }
         .reveal.from-left { transform: translateX(-100px); }
         .reveal.from-right { transform: translateX(100px); }
@@ -245,7 +203,8 @@ Do not remove these comments. -->
             header { padding: 0 1rem; }
             .logo-animated { font-size: 1.8rem; }
             #header-logo-flipper-container { width: 30px; height: 30px; }
-            .contact-icons a { font-size: 1.2rem; margin-left: 1rem; }
+            .contact-icons { gap: 1rem; }
+            .contact-icons a, .lang-switcher-button { font-size: 1.2rem; }
             section { padding: 4rem 0; }
             #animation-section-wrapper { padding: 2rem 0; }
             .container { padding: 0 1rem; }
@@ -257,6 +216,7 @@ Do not remove these comments. -->
 
     <div id="loader">
         <div class="spinner"></div>
+        <div id="loader-content"></div>
     </div>
 
     <header>
@@ -269,7 +229,10 @@ Do not remove these comments. -->
             <h1 class="logo-animated">HoszMet</h1>
         </div>
         <div class="contact-icons">
-            <a href="index-en.html" aria-label="Switch to English version"><i class="fas fa-globe"></i></a>
+            <div class="lang-switcher">
+                <button class="lang-switcher-button" id="lang-switcher-btn" aria-label="Zmień język"><i class="fas fa-globe"></i></button>
+                <ul class="lang-switcher-menu" id="lang-switcher-menu"></ul>
+            </div>
             <a href="#kontakt" aria-label="Napisz do nas"><i class="fas fa-envelope"></i></a>
             <a id="phone-link" href="#" aria-label="Zadzwoń do nas"><i class="fas fa-phone"></i></a>
         </div>
@@ -280,37 +243,31 @@ Do not remove these comments. -->
             <div class="video-background">
                 <video playsinline autoplay muted loop id="bg-video" poster="./gfx/photoh1.png">
                     <source src="./video/bg1.mp4" type="video/mp4">
-                    Twoja przeglądarka nie obsługuje tagu wideo.
+                    <span data-lang="videoNotSupported"></span>
                 </video>
             </div>
             <div id="hero-slideshow-container" class="slideshow-container hidden"></div>
             <div class="hero-content">
-                <h1><span class="hero-hosz">Hosz</span><span class="hero-met">Met</span> - Trwałość i Nowoczesność w Stali</h1>
-                <p>Projektujemy, produkujemy i montujemy konstrukcje stalowe najwyższej jakości, dopasowane do Twoich potrzeb.</p>
+                <h1 data-lang="heroTitle"></h1>
+                <p data-lang="heroSubtitle"></p>
             </div>
             <button id="toggle-media-btn" aria-label="Wyłącz wideo i pokaż realizacje">X</button>
         </section>
 
         <section id="o-firmie" class="reveal from-left">
             <div class="container">
-                <h2>O nas</h2>
-                <p>Firma HoszMet to lokalny lider w branży stalowej. Projektujemy, wykonujemy i montujemy konstrukcje stalowe, dopasowane do Twoich potrzeb. Zabudowujemy płytą warstwową i blachą trapezową. Działamy na rynku od wielu lat, łącząc doświadczenie z nowoczesnymi rozwiązaniami technologicznymi.</p>
+                <h2 data-lang="aboutUsTitle"></h2>
+                <p data-lang="aboutUsText"></p>
             </div>
         </section>
 
         <section id="oferta" class="reveal from-right">
-             <div class="video-background">
-                <video playsinline autoplay muted loop>
-                    <source src="./video/bg2.mp4" type="video/mp4">
-                </video>
-            </div>
+            <div id="oferta-video-slider"></div>
+            <button id="toggle-oferta-media-btn" aria-label="Zatrzymaj wideo">X</button>
+            <button id="next-oferta-video-btn" aria-label="Następne wideo"><i class="fas fa-arrow-right"></i></button>
             <div class="container">
-                <h2>Nasza oferta</h2>
-                <div class="oferta-grid">
-                    <div class="oferta-item"> <div class="icon"><i class="fas fa-layer-group"></i></div> <h3>Sprzedaż stali</h3> <p>Oferujemy szeroki asortyment stali konstrukcyjnej i nierdzewnej najwyższej jakości.</p> </div>
-                    <div class="oferta-item"> <div class="icon"><i class="fas fa-clone"></i></div> <h3>Płyty Warstwowe i Blachy</h3> <p>Zabudowujemy konstrukcje płytą warstwową i blachą trapezową, zapewniając trwałość i estetykę.</p> </div>
-                    <div class="oferta-item"> <div class="icon"><i class="fas fa-tools"></i></div> <h3>Spawanie i prefabrykacja</h3> <p>Wykonujemy trwałe elementy stalowe na zamówienie, gotowe do montażu na miejscu inwestycji.</p> </div>
-                    <div class="oferta-item"> <div class="icon"><i class="fas fa-headset"></i></div> <h3>Doradztwo techniczne</h3> <p>Nasi eksperci pomogą w doborze optymalnych rozwiązań i materiałów dla Twojego projektu.</p> </div>
+                <h2 data-lang="offerTitle"></h2>
+                <div class="oferta-grid" id="oferta-grid-container">
                 </div>
             </div>
         </section>
@@ -321,11 +278,11 @@ Do not remove these comments. -->
 
         <section id="kontakt" class="reveal from-right">
             <div class="container">
-                <h2>Kontakt</h2>
+                <h2 data-lang="contactTitle"></h2>
                 <div class="kontakt-wrapper">
                     <div class="kontakt-info">
                         <div class="kontakt-info-inner">
-                            <p><i class="fas fa-map-marker-alt"></i>ul. Powstańców 34<br>44-153 Sośnicowice</p>
+                            <p><i class="fas fa-map-marker-alt"></i><span data-lang="contactAddress"></span></p>
                             <p><i class="fas fa-phone"></i><a id="contact-phone-link" href="#"></a></p>
                             <p><i class="fas fa-envelope"></i><a id="email-link" href="#"></a></p>
                             <p><i class="fas fa-globe"></i><a href="http://www.hoszmet.pl" target="_blank">www.hoszmet.pl</a></p>
@@ -334,10 +291,10 @@ Do not remove these comments. -->
                     <div class="address-box">
                         <div class="address-box-inner">
                             <h3><b class="hosz-style">Hosz</b><b class="met-style">Met</b></h3>
-                            <p>ul. Powstańców 34</p>
-                            <p>44-153 Sośnicowice</p>
-                            <p>NIP: 9691525594</p>
-
+                            <p data-lang="contactAddressBoxLine1"></p>
+                            <p data-lang="contactAddressBoxLine2"></p>
+                            <p data-lang="contactCountry"></p>
+                            <p data-lang="contactNIP"></p>
                         </div>
                     </div>
                 </div>
@@ -346,9 +303,9 @@ Do not remove these comments. -->
 
         <section id="lokalizacja" class="reveal from-left">
             <div class="container">
-                <h2>Lokalizacja</h2>
+                <h2 data-lang="locationTitle"></h2>
                 <a id="map-link" href="#" target="_blank">
-                    <img id="map-image" src="" alt="Mapa dojazdu do siedziby firmy HoszMet">
+                    <img id="map-image" src="" data-lang-alt="locationMapAlt">
                 </a>
             </div>
         </section>
@@ -359,17 +316,21 @@ Do not remove these comments. -->
             <div id="footer-slideshow" class="slideshow-container"></div>
             <div class="footer-content">
                 <h3><b class="hosz-style">Hosz</b><b class="met-style">Met</b></h3>
-                <p>© 2025 <a href="http://www.hoszmet.pl" target="_blank">HoszMet</a>. Realizacja: <a href="http://www.ade.pl" target="_blank"><strong>ade</strong></a>. Wszelkie prawa zastrzeżone.</p>
-                <p class="footer-privacy">Strona wykorzystuje pliki cookies w celu zapewnienia najwyższej jakości usług. Dalsze korzystanie z witryny oznacza zgodę na ich użycie. Szanujemy Twoją prywatność.</p>
+                <p data-lang="footerCopyright"></p>
+                <p class="footer-privacy" data-lang="footerPrivacy"></p>
             </div>
        </div>
-       <a href="#" class="back-to-top" aria-label="Powrót do góry"><i class="fas fa-chevron-up"></i></a>
+       <a href="#" class="back-to-top" data-lang-aria-label="backToTopAria"><i class="fas fa-chevron-up"></i></a>
     </footer>
 
     <script>
     (function() {
         'use strict';
 
+        // =================================================================
+        // 🔹 CONFIGURATION
+        // =================================================================
+        
         const config = {
             bgVideo: true,
             logo1: "logo1.png",
@@ -378,34 +339,114 @@ Do not remove these comments. -->
             photoHCycle: 3000,
             photoSqCycle: 4000,
             frameAnimationInterval: 3000,
-            phone: "697 232 228"
+        };
+        
+        const langConfig = {
+            current: 'pl',
+            // Future-proof list: pl, en, de, es, fr, it, cz, sk, uk
+            available: ['pl', 'en', 'de', 'cz', 'sk'],
+            files: {
+                'pl': 'index.html',
+                'en': 'index-en.html',
+                'de': 'index-de.html',
+                'cz': 'index-cz.html',
+                'sk': 'index-sk.html',
+                // 'es': 'index-es.html' // etc.
+            }
         };
 
+        // =================================================================
+        // 🔸 LANGUAGE STRINGS (POLISH)
+        // =================================================================
+
+        const langStrings = {
+            metaTitle: "HoszMet - Nowoczesne Konstrukcje Stalowe",
+            metaDescription: "HoszMet to lider w branży stalowej. Oferujemy kompleksowe usługi związane z montażem konstrukcji stalowych, spawaniem i zabudową płytami warstwowymi.",
+            metaKeywords: "konstrukcje stalowe, montaż hal, spawanie, płyty warstwowe, HoszMet, Sośnicowice",
+            
+            phone: "697 232 228",
+
+            videoNotSupported: "Twoja przeglądarka nie obsługuje tagu wideo.",
+
+            heroTitle: '<span class="hero-hosz">Hosz</span><span class="hero-met">Met</span> - Trwałość i Nowoczesność w Stali',
+            heroSubtitle: 'Projektujemy, produkujemy i montujemy konstrukcje stalowe najwyższej jakości, dopasowane do Twoich potrzeb.',
+            
+            toggleVideoBtn_On: "Wyłącz wideo i pokaż realizacje",
+            toggleVideoBtn_Off: "Włącz wideo",
+
+            aboutUsTitle: "O nas",
+            aboutUsText: "Firma HoszMet to lokalny lider w branży stalowej. Projektujemy, wykonujemy i montujemy konstrukcje stalowe, dopasowane do Twoich potrzeb. Zabudowujemy płytą warstwową i blachą trapezową. Działamy na rynku od wielu lat, łącząc doświadczenie z nowoczesnymi rozwiązaniami technologicznymi.",
+            
+            offerTitle: "Nasza oferta",
+            offerItems: [
+                { icon: "fas fa-building-user", title: "Montaż konstrukcji stalowych", text: "Specjalizujemy się w profesjonalnym montażu hal, magazynów i innych obiektów opartych na konstrukcjach stalowych." },
+                { icon: "fas fa-tools", title: "Spawanie i prefabrykacja", text: "Wykonujemy trwałe elementy stalowe na zamówienie, gotowe do montażu na miejscu inwestycji." },
+                { icon: "fas fa-clone", title: "Płyty Warstwowe i Blachy", text: "Zabudowujemy konstrukcje płytą warstwową i blachą trapezową, zapewniając trwałość i estetykę." },
+                { icon: "fas fa-headset", title: "Doradztwo techniczne", text: "Nasi eksperci pomogą w doborze optymalnych rozwiązań i materiałów dla Twojego projektu." }
+            ],
+            
+            toggleOfertaVideoBtn_On: "Zatrzymaj wideo",
+            toggleOfertaVideoBtn_Off: "Wznów wideo",
+            nextOfertaVideoBtn: "Następne wideo",
+            
+            contactTitle: "Kontakt",
+            contactAddress: "ul. Powstańców 34<br>44-153 Sośnicowice",
+            contactAddressBoxLine1: "ul. Powstańców 34",
+            contactAddressBoxLine2: "44-153 Sośnicowice",
+            contactCountry: "",
+            contactNIP: "NIP: 9691525594",
+            
+            locationTitle: "Lokalizacja",
+            locationMapAlt: "Mapa dojazdu do siedziby firmy HoszMet",
+
+            footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Projekt i Realizacja: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Wszelkie prawa zastrzeżone.",
+            footerPrivacy: "Strona wykorzystuje pliki cookies w celu zapewnienia najwyższej jakości usług. Dalsze korzystanie z witryny oznacza zgodę na ich użycie. Szanujemy Twoją prywatność.",
+            
+            backToTopAria: "Powrót do góry",
+            
+            loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Wystąpił błąd ładowania.<br>Prosimy odświeżyć stronę.'
+        };
+
+
+        // =================================================================
+        // ⚡️ CORE SCRIPT (DO NOT EDIT BELOW)
+        // =================================================================
+
         const GFX_PATH = './gfx/';
+        const VIDEO_PATH = './video/';
         const horizontalPhotos = ['photoh1.png', 'photoh2.png', 'photoh3.png', 'photoh4.png', 'photoh5.png', 'photoh6.png'];
         const squarePhotos = ['photosq1.png', 'photosq2.png', 'photosq3.png', 'photosq4.png'];
         const logoFiles = [config.logo1, config.logo2];
+        const ofertaVideoFiles = ['bg2-1.mp4', 'bg2-2.mp4', 'bg2-3.mp4'];
 
         const loader = document.getElementById('loader');
-        const heroSection = document.getElementById('hero');
-        const videoContainer = document.querySelector('#hero .video-background');
         const bgVideo = document.getElementById('bg-video');
-        const ofertaVideo = document.querySelector('#oferta .video-background video');
+        const videoContainer = document.querySelector('#hero .video-background');
         const heroSlideshowContainer = document.getElementById('hero-slideshow-container');
         const toggleMediaBtn = document.getElementById('toggle-media-btn');
         const footerSlideshowContainer = document.getElementById('footer-slideshow');
         const frameAnimationContainer = document.getElementById('frame-animation-container');
         let videosAreOn = true;
+        let loadingTimeout;
+
+        function showLoaderError() {
+            if (!loader.classList.contains('hidden')) {
+                const loaderContent = document.getElementById('loader-content');
+                document.querySelector('#loader .spinner').style.display = 'none';
+                loaderContent.innerHTML = `<div class="loader-error-message">${langStrings.loaderError}</div>`;
+            }
+        }
         
         function hideLoader() {
+            clearTimeout(loadingTimeout);
             loader.classList.add('hidden');
         }
 
         function toggleAllVideos() {
+            const allVideos = document.querySelectorAll('video');
             if (videosAreOn) {
                 // Turn videos OFF
-                bgVideo.pause();
-                if (ofertaVideo) ofertaVideo.pause();
+                allVideos.forEach(v => v.pause());
                 videoContainer.style.opacity = '0';
                 
                 setTimeout(() => {
@@ -414,21 +455,19 @@ Do not remove these comments. -->
                 }, 1000); // Sync with CSS transition
                 
                 toggleMediaBtn.innerHTML = '<i class="fas fa-play"></i>';
-                toggleMediaBtn.setAttribute('aria-label', 'Włącz wideo');
+                toggleMediaBtn.setAttribute('aria-label', langStrings.toggleVideoBtn_Off);
             } else {
                 // Turn videos ON
                 videoContainer.classList.remove('hidden');
                 
-                // Delay to allow display property to apply before transition
                 setTimeout(() => {
                     videoContainer.style.opacity = '1';
                     heroSlideshowContainer.classList.add('hidden');
-                    bgVideo.play();
-                    if (ofertaVideo) ofertaVideo.play();
+                    allVideos.forEach(v => v.play().catch(() => {}));
                 }, 50);
 
                 toggleMediaBtn.innerHTML = 'X';
-                toggleMediaBtn.setAttribute('aria-label', 'Wyłącz wideo i pokaż realizacje');
+                toggleMediaBtn.setAttribute('aria-label', langStrings.toggleVideoBtn_On);
             }
             videosAreOn = !videosAreOn;
         }
@@ -456,6 +495,99 @@ Do not remove these comments. -->
             }
         }
         
+        // --- OFERTA VIDEO SLIDER ---
+        let ofertaVideoElements = [];
+        let ofertaCurrentIndex = -1;
+        let ofertaVideoTimer = null;
+        let isOfertaVideoPaused = false;
+        const ofertaSliderContainer = document.getElementById('oferta-video-slider');
+        const toggleOfertaBtn = document.getElementById('toggle-oferta-media-btn');
+        const nextOfertaBtn = document.getElementById('next-oferta-video-btn');
+
+function playNextOfertaVideo(isManual = false) {
+            if (isOfertaVideoPaused && !isManual) return;
+            clearTimeout(ofertaVideoTimer);
+
+            // Wybierz losowo następne wideo, upewniając się, że nie jest to to samo
+            let nextIndex;
+            do {
+                nextIndex = Math.floor(Math.random() * ofertaVideoElements.length);
+            } while (ofertaVideoElements.length > 1 && nextIndex === ofertaCurrentIndex);
+            
+            // Poprawione zarządzanie klasami dla płynnego przejścia
+            if (ofertaCurrentIndex > -1) {
+                const oldVideo = ofertaVideoElements[ofertaCurrentIndex];
+                oldVideo.classList.remove('active'); // Usuń 'active' natychmiast
+                oldVideo.classList.add('exiting');    // Dodaj 'exiting', aby uruchomić animację wyjścia
+                setTimeout(() => {
+                    oldVideo.classList.remove('exiting'); // Wyczyść klasę po zakończeniu animacji
+                }, 1500); // Czas musi być zgodny z czasem trwania przejścia w CSS
+            }
+
+            ofertaCurrentIndex = nextIndex;
+            const newVideo = ofertaVideoElements[ofertaCurrentIndex];
+            
+            // Upewnij się, że wideo jest gotowe do odtworzenia przed dodaniem klasy 'active'
+            newVideo.currentTime = 0;
+            const playPromise = newVideo.play();
+
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    // Wideo jest odtwarzane, teraz pokaż je
+                    newVideo.classList.add('active');
+                }).catch(() => {
+                    // Błąd odtwarzania, mimo wszystko spróbuj pokazać wideo
+                    newVideo.classList.add('active');
+                });
+            } else {
+                 newVideo.classList.add('active');
+            }
+
+            // Ustaw timer na następne wideo, jeśli odtwarzanie nie jest wstrzymane
+            if (!isOfertaVideoPaused) {
+                ofertaVideoTimer = setTimeout(playNextOfertaVideo, 8000);
+            }
+        }
+
+        function toggleOfertaVideo() {
+            isOfertaVideoPaused = !isOfertaVideoPaused;
+            const currentVideo = ofertaVideoElements[ofertaCurrentIndex];
+
+            if (isOfertaVideoPaused) {
+                clearTimeout(ofertaVideoTimer);
+                if (currentVideo) currentVideo.pause();
+                toggleOfertaBtn.innerHTML = '<i class="fas fa-play"></i>';
+                toggleOfertaBtn.setAttribute('aria-label', langStrings.toggleOfertaVideoBtn_Off);
+            } else {
+                if (currentVideo) currentVideo.play().catch(() => {});
+                playNextOfertaVideo();
+                toggleOfertaBtn.innerHTML = 'X';
+                toggleOfertaBtn.setAttribute('aria-label', langStrings.toggleOfertaVideoBtn_On);
+            }
+        }
+
+        function initOfertaSlider() {
+            if (!ofertaSliderContainer) return;
+            
+            ofertaVideoFiles.forEach(src => {
+                const video = document.createElement('video');
+                video.src = VIDEO_PATH + src;
+                video.playsInline = true;
+                video.muted = true;
+                video.loop = true; // Loop ensures it plays if the transition is longer than the clip
+                ofertaSliderContainer.appendChild(video);
+                ofertaVideoElements.push(video);
+            });
+
+            if(ofertaVideoElements.length > 0) {
+                toggleOfertaBtn.addEventListener('click', toggleOfertaVideo);
+                nextOfertaBtn.addEventListener('click', () => playNextOfertaVideo(true));
+                playNextOfertaVideo();
+            }
+        }
+        // --- END OFERTA VIDEO SLIDER ---
+
+
         function initHeaderLogoAnimation() {
             const flipper = document.getElementById('header-logo-flipper');
             const imgElement = document.getElementById('header-logo-img');
@@ -496,30 +628,99 @@ Do not remove these comments. -->
         }
 
         function setupDynamicContent() {
-            const phoneLink = `tel:${config.phone.replace(/\s/g, '')}`;
+            const phoneLink = `tel:${langStrings.phone.replace(/\s/g, '')}`;
             document.getElementById('phone-link').href = phoneLink;
             
             const contactPhoneLink = document.getElementById('contact-phone-link');
             contactPhoneLink.href = phoneLink;
-            contactPhoneLink.textContent = config.phone;
+            contactPhoneLink.textContent = langStrings.phone;
 
             const emailLink = document.getElementById('email-link');
             const user = 'biuro';
             const domain = 'hoszmet.pl';
-            emailLink.textContent = `${user} (małpka) ${domain}`;
+            emailLink.textContent = `${user}@${domain}`;
             emailLink.href = `mailto:${user}@${domain}`;
 
             document.getElementById('map-image').src = config.map;
-            document.getElementById('map-link').href = 'https://www.google.com/maps/place/Powsta%C5%84c%C3%B3w+34,+44-153+So%C5%9Bnicowice/@50.2682631,18.5157251,17z/data=!3m1!4b1!4m6!3m5!1s0x4711397a8e23c41d:0xc6652e02fefdf874!8m2!3d50.2682632!4d18.5206014!16s%2Fg%2F11fpv9fwgp?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D';
+            document.getElementById('map-link').href = 'https://goo.gl/maps/b9ZufL89J71VcfQD9';
+        }
+        
+        function applyLanguageStrings() {
+            document.title = langStrings.metaTitle;
+            document.querySelector('meta[name="description"]').setAttribute('content', langStrings.metaDescription);
+            document.querySelector('meta[name="keywords"]').setAttribute('content', langStrings.metaKeywords);
+
+            document.querySelector('[data-lang="heroTitle"]').innerHTML = langStrings.heroTitle;
+            document.querySelector('[data-lang="heroSubtitle"]').textContent = langStrings.heroSubtitle;
+            document.querySelector('[data-lang="videoNotSupported"]').textContent = langStrings.videoNotSupported;
+
+            document.getElementById('toggle-media-btn').setAttribute('aria-label', langStrings.toggleVideoBtn_On);
+            
+            document.querySelector('[data-lang="aboutUsTitle"]').textContent = langStrings.aboutUsTitle;
+            document.querySelector('[data-lang="aboutUsText"]').textContent = langStrings.aboutUsText;
+            
+            document.querySelector('[data-lang="offerTitle"]').textContent = langStrings.offerTitle;
+            const ofertaGrid = document.getElementById('oferta-grid-container');
+            ofertaGrid.innerHTML = langStrings.offerItems.map(item => `
+                <div class="oferta-item">
+                    <div class="icon"><i class="${item.icon}"></i></div>
+                    <h3>${item.title}</h3>
+                    <p>${item.text}</p>
+                </div>
+            `).join('');
+
+            document.querySelector('[data-lang="contactTitle"]').textContent = langStrings.contactTitle;
+            document.querySelector('[data-lang="contactAddress"]').innerHTML = langStrings.contactAddress;
+            document.querySelector('[data-lang="contactAddressBoxLine1"]').textContent = langStrings.contactAddressBoxLine1;
+            document.querySelector('[data-lang="contactAddressBoxLine2"]').textContent = langStrings.contactAddressBoxLine2;
+            document.querySelector('[data-lang="contactCountry"]').textContent = langStrings.contactCountry;
+            document.querySelector('[data-lang="contactNIP"]').textContent = langStrings.contactNIP;
+
+            document.querySelector('[data-lang="locationTitle"]').textContent = langStrings.locationTitle;
+            document.querySelector('[data-lang-alt="locationMapAlt"]').setAttribute('alt', langStrings.locationMapAlt);
+            
+            document.querySelector('[data-lang="footerCopyright"]').innerHTML = langStrings.footerCopyright;
+            document.querySelector('[data-lang="footerPrivacy"]').textContent = langStrings.footerPrivacy;
+            document.querySelector('[data-lang-aria-label="backToTopAria"]').setAttribute('aria-label', langStrings.backToTopAria);
+        }
+
+        function initLangSwitcher() {
+            const btn = document.getElementById('lang-switcher-btn');
+            const menu = document.getElementById('lang-switcher-menu');
+            
+            langConfig.available.forEach(lang => {
+                if (lang !== langConfig.current) {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = langConfig.files[lang] || `index-${lang}.html`;
+                    a.textContent = lang;
+                    li.appendChild(a);
+                    menu.appendChild(li);
+                }
+            });
+
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('show');
+            });
+
+            document.addEventListener('click', () => {
+                if (menu.classList.contains('show')) {
+                    menu.classList.remove('show');
+                }
+            });
         }
 
         document.addEventListener('DOMContentLoaded', () => {
+            applyLanguageStrings();
             setupDynamicContent();
             initHeaderLogoAnimation();
             initSlideshow(footerSlideshowContainer, squarePhotos, config.photoSqCycle);
             initSlideshow(heroSlideshowContainer, horizontalPhotos, config.photoHCycle); 
             initSlideshow(frameAnimationContainer, horizontalPhotos, config.frameAnimationInterval);
+            initOfertaSlider();
             initScrollAnimations();
+            initLangSwitcher();
 
             toggleMediaBtn.addEventListener('click', toggleAllVideos);
             
@@ -528,7 +729,11 @@ Do not remove these comments. -->
             }
         });
 
-        window.addEventListener('load', hideLoader);
+        window.addEventListener('load', () => {
+            hideLoader();
+        });
+        
+        loadingTimeout = setTimeout(showLoaderError, 8000);
 
     })();
     </script>

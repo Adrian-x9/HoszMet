@@ -1,0 +1,63 @@
+// =================================================================
+// 🔸 LANGUAGE STRINGS (ENGLISH)
+// =================================================================
+
+const langStrings = {
+    // Meta tags: Translation is SEO-optimized.
+    metaTitle: "HoszMet - Modern Steel Structures",
+    metaDescription: "HoszMet is a leader in the steel industry. We offer comprehensive services related to the assembly of steel structures, welding, and sandwich panel cladding.",
+    metaKeywords: "steel structures, hall assembly, welding, sandwich panels, HoszMet, Sośnicowice",
+    
+    // Updated phone number format
+    phone: "+48 697 232 228",
+
+    // Standard technical message.
+    videoNotSupported: "Your browser does not support the video tag.",
+
+    // Hero section: Translation is dynamic and maintains a professional brand image.
+    heroTitle: '<span class="hero-hosz">Hosz</span><span class="hero-met">Met</span> - Durability and Modernity in Steel',
+    heroSubtitle: 'We design, manufacture, and assemble the highest quality steel structures, tailored to your needs.',
+    
+    // Clear and concise calls to action.
+    toggleVideoBtn_On: "Disable video and show projects",
+    toggleVideoBtn_Off: "Enable video",
+
+    // About Us: The text sounds professional and builds trust.
+    aboutUsTitle: "About Us",
+    aboutUsText: "HoszMet is a local leader in the steel industry. We design, manufacture, and assemble steel structures tailored to your needs. We clad structures with sandwich panels and trapezoidal sheets. We have been operating on the market for many years, combining experience with modern technological solutions.",
+    
+    // Standard industry terminology is used.
+    offerTitle: "Our Offer",
+    offerItems: [
+        { icon: "fas fa-building-user", title: "Steel Structure Assembly", text: "We specialize in the professional assembly of halls, warehouses, and other facilities based on steel structures." },
+        { icon: "fas fa-tools", title: "Welding and Prefabrication", text: "We produce durable custom-made steel elements, ready for assembly at the project site." },
+        { icon: "fas fa-clone", title: "Sandwich Panels and Sheets", text: "We clad structures with sandwich panels and trapezoidal sheets, ensuring durability and aesthetics." },
+        { icon: "fas fa-headset", title: "Technical Consulting", text: "Our experts will help you choose the optimal solutions and materials for your project." }
+    ],
+    
+    // Translations for the "Offer" section video slider controls
+    toggleOfertaVideoBtn_On: "Pause video",
+    toggleOfertaVideoBtn_Off: "Resume video",
+    nextOfertaVideoBtn: "Next video",
+            
+    // Contact: Updated address and TAX ID format
+    contactTitle: "Contact",
+    contactAddress: "34 Powstańców St.<br>44-153 Sośnicowice<br>Poland",
+    contactAddressBoxLine1: "34 Powstańców St.",
+    contactAddressBoxLine2: "44-153 Sośnicowice",
+    contactCountry: "Poland",
+    contactNIP: "TAX ID: PL9691525594", 
+
+    // Understandable for an English-speaking user.
+    locationTitle: "Location",
+    locationMapAlt: "Map with directions to the HoszMet headquarters",
+
+    // Standard legal phrases.
+    footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Design and Implementation: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. All rights reserved.",
+    footerPrivacy: "This website uses cookies to ensure the highest quality of service. By continuing to use the site, you agree to their use. We respect your privacy.",
+    
+    // Standard accessibility and error messages.
+    backToTopAria: "Back to top",
+    
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>An error occurred while loading.<br>Please refresh the page.'
+};

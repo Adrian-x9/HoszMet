@@ -1,0 +1,63 @@
+// =================================================================
+// 🔸 JAZYKOVÉ REŤAZCE (SLOVENČINA)
+// =================================================================
+
+const langStrings = {
+    // Meta tagy: Preklad je optimalizovaný pre SEO.
+    metaTitle: "HoszMet - Moderné Oceľové Konštrukcie",
+    metaDescription: "HoszMet je lídrom v oceliarskom priemysle. Ponúkame komplexné služby spojené s montážou oceľových konštrukcií, zváraním a opláštením sendvičovými panelmi.",
+    metaKeywords: "oceľové konštrukcie, montáž hál, zváranie, sendvičové panely, HoszMet, Sośnicowice",
+    
+    // Telefónne číslo v medzinárodnom formáte.
+    phone: "+48 697 232 228",
+
+    // Štandardná technická správa.
+    videoNotSupported: "Váš prehliadač nepodporuje video tag.",
+
+    // Hero sekcia: Preklad je dynamický a udržiava profesionálny imidž značky.
+    heroTitle: '<span class="hero-hosz">Hosz</span><span class="hero-met">Met</span> - Trvanlivosť a Modernosť v Oceli',
+    heroSubtitle: 'Navrhujeme, vyrábame a montujeme oceľové konštrukcie najvyššej kvality, prispôsobené vašim potrebám.',
+    
+    // Jasné a stručné výzvy na akciu.
+    toggleVideoBtn_On: "Vypnúť video a zobraziť realizácie",
+    toggleVideoBtn_Off: "Zapnúť video",
+
+    // O nás: Text znie profesionálne a buduje dôveru.
+    aboutUsTitle: "O nás",
+    aboutUsText: "Firma HoszMet je lokálnym lídrom v oceliarskom priemysle. Navrhujeme, vyrábame a montujeme oceľové konštrukcie prispôsobené vašim potrebám. Oplášťujeme sendvičovými panelmi a trapézovým plechom. Na trhu pôsobíme mnoho rokov, spájajúc skúsenosti s modernými technologickými riešeniami.",
+    
+    // Použitá je štandardná priemyselná terminológia.
+    offerTitle: "Naša ponuka",
+    offerItems: [
+        { icon: "fas fa-building-user", title: "Montáž oceľových konštrukcií", text: "Špecializujeme sa na profesionálnu montáž hál, skladov a iných objektov založených na oceľových konštrukciách." },
+        { icon: "fas fa-tools", title: "Zváranie a prefabrikácia", text: "Vyrábame odolné oceľové prvky na zákazku, pripravené na montáž na mieste investície." },
+        { icon: "fas fa-clone", title: "Sendvičové Panely a Plechy", text: "Oplášťujeme konštrukcie sendvičovými panelmi a trapézovým plechom, čím zaisťujeme trvanlivosť a estetiku." },
+        { icon: "fas fa-headset", title: "Technické poradenstvo", text: "Naši odborníci vám pomôžu vybrať optimálne riešenia a materiály pre váš projekt." }
+    ],
+    
+    // Preklady pre ovládacie prvky videa v sekcii "Ponuka".
+    toggleOfertaVideoBtn_On: "Pozastaviť video",
+    toggleOfertaVideoBtn_Off: "Pokračovať vo videu",
+    nextOfertaVideoBtn: "Ďalšie video",
+            
+    // Kontakt: Aktualizovaná adresa a formát IČ DPH.
+    contactTitle: "Kontakt",
+    contactAddress: "ul. Powstańców 34<br>44-153 Sośnicowice<br>Poľsko",
+    contactAddressBoxLine1: "ul. Powstańców 34",
+    contactAddressBoxLine2: "44-153 Sośnicowice",
+    contactCountry: "Poľsko",
+    contactNIP: "IČ DPH: PL9691525594", 
+
+    // Zrozumiteľné pre slovenského používateľa.
+    locationTitle: "Lokalita",
+    locationMapAlt: "Mapa s trasou do sídla spoločnosti HoszMet",
+
+    // Štandardné právne frázy.
+    footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Návrh a realizácia: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Všetky práva vyhradené.",
+    footerPrivacy: "Táto webová stránka používa súbory cookie na zabezpečenie najvyššej kvality služieb. Pokračovaním v používaní stránky súhlasíte s ich používaním. Rešpektujeme vaše súkromie.",
+    
+    // Štandardné správy o prístupnosti a chybách.
+    backToTopAria: "Späť na začiatok",
+    
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Vyskytla sa chyba pri načítaní.<br>Prosím, obnovte stránku.'
+};

@@ -1,0 +1,63 @@
+// =================================================================
+// 🔸 LANGUAGE STRINGS (GERMAN)
+// =================================================================
+
+const langStrings = {
+    // Meta-Tags: Die Übersetzung ist SEO-optimiert.
+    metaTitle: "HoszMet - Moderne Stahlkonstruktionen",
+    metaDescription: "HoszMet ist ein führendes Unternehmen in der Stahlindustrie. Wir bieten umfassende Dienstleistungen in der Montage von Stahlkonstruktionen, Schweißarbeiten und der Verkleidung mit Sandwichplatten.",
+    metaKeywords: "Stahlkonstruktionen, Hallenmontage, Schweißen, Sandwichplatten, HoszMet, Sośnicowice",
+    
+    // Telefonnummernformat aktualisiert
+    phone: "+48 697 232 228",
+
+    // Technische Standardmeldung.
+    videoNotSupported: "Ihr Browser unterstützt das Video-Tag nicht.",
+
+    // Hero-Sektion: Die Übersetzung ist dynamisch und bewahrt ein professionelles Markenimage.
+    heroTitle: '<span class="hero-hosz">Hosz</span><span class="hero-met">Met</span> - Beständigkeit und Modernität in Stahl',
+    heroSubtitle: 'Wir entwerfen, fertigen und montieren hochwertigste Stahlkonstruktionen, die auf Ihre Bedürfnisse zugeschnitten sind.',
+    
+    // Klare und prägnante Handlungsaufforderungen.
+    toggleVideoBtn_On: "Video deaktivieren und Projekte anzeigen",
+    toggleVideoBtn_Off: "Video aktivieren",
+
+    // Über uns: Der Text klingt professionell und schafft Vertrauen.
+    aboutUsTitle: "Über uns",
+    aboutUsText: "HoszMet ist ein lokaler Marktführer in der Stahlindustrie. Wir entwerfen, fertigen und montieren Stahlkonstruktionen, die auf Ihre Bedürfnisse zugeschnitten sind. Wir verkleiden Konstruktionen mit Sandwichplatten und Trapezblechen. Wir sind seit vielen Jahren auf dem Markt tätig und verbinden Erfahrung mit modernen technologischen Lösungen.",
+    
+    // Es wird die branchenübliche Terminologie verwendet.
+    offerTitle: "Unser Angebot",
+    offerItems: [
+        { icon: "fas fa-building-user", title: "Montage von Stahlkonstruktionen", text: "Wir sind spezialisiert auf die professionelle Montage von Hallen, Lagerhäusern und anderen Objekten auf Basis von Stahlkonstruktionen." },
+        { icon: "fas fa-tools", title: "Schweißen und Vorfertigung", text: "Wir fertigen langlebige Stahlelemente nach Maß, bereit zur Montage am Projektstandort." },
+        { icon: "fas fa-clone", title: "Sandwichplatten und Bleche", text: "Wir verkleiden Konstruktionen mit Sandwichplatten und Trapezblechen und sorgen so für Langlebigkeit und Ästhetik." },
+        { icon: "fas fa-headset", title: "Technische Beratung", text: "Unsere Experten helfen Ihnen bei der Auswahl der optimalen Lösungen und Materialien für Ihr Projekt." }
+    ],
+    
+    // Übersetzungen für die Steuerelemente des Video-Sliders im Abschnitt "Angebot"
+    toggleOfertaVideoBtn_On: "Video anhalten",
+    toggleOfertaVideoBtn_Off: "Video fortsetzen",
+    nextOfertaVideoBtn: "Nächstes Video",
+            
+    // Kontakt: Aktualisierte Adresse und USt-IdNr.-Format
+    contactTitle: "Kontakt",
+    contactAddress: "Powstańców Str. 34<br>44-153 Sośnicowice<br>Polen",
+    contactAddressBoxLine1: "Powstańców Str. 34",
+    contactAddressBoxLine2: "44-153 Sośnicowice",
+    contactCountry: "Polen",
+    contactNIP: "USt-IdNr.: PL9691525594", 
+
+    // Verständlich für einen deutschsprachigen Benutzer.
+    locationTitle: "Standort",
+    locationMapAlt: "Karte mit Anfahrt zum Hauptsitz von HoszMet",
+
+    // Rechtliche Standardformulierungen.
+    footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Design und Umsetzung: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Alle Rechte vorbehalten.",
+    footerPrivacy: "Diese Webseite verwendet Cookies, um die höchste Servicequalität zu gewährleisten. Indem Sie die Seite weiterhin nutzen, stimmen Sie deren Verwendung zu. Wir respektieren Ihre Privatsphäre.",
+    
+    // Standardmäßige Barrierefreiheits- und Fehlermeldungen.
+    backToTopAria: "Zurück nach oben",
+    
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Beim Laden ist ein Fehler aufgetreten.<br>Bitte laden Sie die Seite neu.'
+};
