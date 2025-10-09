@@ -1049,7 +1049,14 @@
                 }
 
                 // 2. Jeśli nie, wykryj język przeglądarki
-                const browserLang = (navigator.language || navigator.userLanguage).split('-')[0];
+                let browserLang = (navigator.language || navigator.userLanguage).split('-')[0];
+                
+                // --- KRYTYCZNA POPRAWKA ---
+                // Przeglądarka zgłasza 'en', a my używamy 'us'. Ta linia to naprawia.
+                if (browserLang === 'en') {
+                    browserLang = 'us';
+                }
+
                 if (browserLang && allStrings[browserLang]) {
                     return browserLang;
                 }
@@ -1083,13 +1090,17 @@
             // =================================================================
 
             function applyLanguageStrings(langCode) {
-                const strings = allStrings[langCode];
+                // --- KRYTYCZNA POPRAWKA ---
+                // Jeśli podany język nie istnieje, funkcja bezpiecznie wróci do 'us'
+                const strings = allStrings[langCode] || allStrings['us'];
+                const finalLangCode = allStrings[langCode] ? langCode : 'us';
+
                 if (!strings) {
-                    console.error(`Brak tłumaczeń dla języka: '${langCode}'.`);
+                    console.error(`Błąd krytyczny: Brak tłumaczeń nawet dla domyślnego języka 'us'.`);
                     return;
                 }
 
-                document.documentElement.lang = langCode;
+                document.documentElement.lang = finalLangCode;
                 document.title = strings.metaTitle;
                 document.querySelector('meta[name="description"]').setAttribute('content', strings.metaDescription);
                 document.querySelector('meta[name="keywords"]').setAttribute('content', strings.metaKeywords);
