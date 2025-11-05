@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoszMet - Nowoczesne Konstrukcje Stalowe</title>
-    <meta name="description"
-        content="HoszMet to lider w branży stalowej. Oferujemy kompleksowe usługi związane z montażem konstrukcji stalowych, spawaniem i zabudową płytami warstwowymi.">
-    <meta name="keywords" content="konstrukcje stalowe, montaż hal, spawanie, płyty warstwowe, HoszMet, Sośnicowice">
+    <title>HoszMet</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -1050,7 +1049,7 @@
 
                 // 2. Jeśli nie, wykryj język przeglądarki
                 let browserLang = (navigator.language || navigator.userLanguage).split('-')[0];
-                
+
                 // --- KRYTYCZNA POPRAWKA ---
                 // Przeglądarka zgłasza 'en', a my używamy 'us'. Ta linia to naprawia.
                 if (browserLang === 'en') {
@@ -1317,6 +1316,9 @@
             // =================================================================
             // 🚀 INICJALIZACJA STRONY
             // =================================================================
+            // =================================================================
+            // 🚀 INICJALIZACJA STRONY
+            // =================================================================
             document.addEventListener('DOMContentLoaded', () => {
                 const closeModal = initModal();
                 const handleLanguageChange = (langCode) => {
@@ -1357,7 +1359,7 @@
                         loaderContent.innerHTML = `<div class="loader-error-message">${allStrings[lang].loaderError}</div>`;
                     }
                 }, 8000);
-            });;;
+            });
 
         })();
     </script>
