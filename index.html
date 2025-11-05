@@ -33,6 +33,8 @@
             --font-primary: 'Poppins', sans-serif;
             --header-height: 80px;
             --transition-speed: 0.5s;
+            /* Zmienna dla czasu slideshow / Variable for slideshow time */
+            --slideshow-interval: 4000ms;
         }
 
         *,
@@ -53,6 +55,11 @@
             line-height: 1.7;
             background-color: var(--color-light);
             color: var(--color-text);
+            overflow-x: hidden;
+        }
+
+        /* POPRAWKA MOBILNA / MOBILE FIX */
+        main {
             overflow-x: hidden;
         }
 
@@ -256,19 +263,25 @@
         }
 
         .contact-icons a,
-        .lang-switcher-button {
+        .lang-switcher-button,
+        .gallery-button {
+            /* <-- DODANO / ADDED .gallery-button */
             color: white;
             font-size: 1.5rem;
             transition: transform 0.3s ease, color 0.3s ease;
         }
 
         .contact-icons a:hover,
-        .lang-switcher-button:hover {
+        .lang-switcher-button:hover,
+        .gallery-button:hover {
+            /* <-- DODANO / ADDED .gallery-button:hover */
             color: var(--color-primary);
             transform: scale(1.2);
         }
 
-        .lang-switcher-button {
+        .lang-switcher-button,
+        .gallery-button {
+            /* <-- DODANO / ADDED .gallery-button */
             background: none;
             border: none;
             cursor: pointer;
@@ -545,6 +558,39 @@
         .oferta-item h3 {
             font-size: 1.5rem;
             color: var(--color-secondary);
+        }
+
+        /* =================================================================
+        🔹 STYLE PRZYCISKU CTA W SEKCJI OFERTA / CTA BUTTON STYLES IN OFFER SECTION
+        =================================================================
+        */
+        .oferta-cta-wrapper {
+            text-align: center;
+            margin-top: 3rem;
+            /* Odstęp od siatki / Space from grid */
+        }
+
+        .btn-oferta-gallery {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: var(--color-dark);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-oferta-gallery:hover {
+            background-color: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
         }
 
         .kontakt-wrapper {
@@ -849,6 +895,371 @@
             }
         }
 
+        /* =================================================================
+        🔹 STYLE GALERII / GALLERY STYLES
+        =================================================================
+        */
+        #gallery-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            /* Dynamic viewport height */
+            background-color: rgba(10, 10, 10, 0.98);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 2000;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #gallery-overlay.gallery-hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /* Ukrywanie głównej treści strony, gdy galeria jest aktywna */
+        /* Hiding main page content when gallery is active */
+        body.gallery-active main,
+        body.gallery-active footer {
+            visibility: hidden;
+        }
+
+        /* Nagłówek pozostaje widoczny, ale pod galerią */
+        /* Header remains visible, but under the gallery */
+        body.gallery-active header {
+            z-index: 1000;
+        }
+
+        .gallery-header {
+            flex-shrink: 0;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid var(--color-medium-dark);
+            height: var(--header-height);
+        }
+
+        .gallery-header h2 {
+            font-size: 1.8rem;
+            color: white;
+            margin: 0;
+            text-align: left;
+        }
+
+        .gallery-header h2::after {
+            display: none;
+            /* Wyłączamy podkreślenie z h2 */
+        }
+
+        .gallery-controls {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .gallery-control-btn {
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery-control-btn:hover {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+            color: white;
+            transform: scale(1.1) rotate(90deg);
+        }
+
+        /* Inna animacja dla play i shuffle */
+        /* Different animation for play and shuffle */
+        .gallery-control-btn#gallery-shuffle-btn:hover,
+        .gallery-control-btn#gallery-play-btn:hover {
+            transform: scale(1.1);
+        }
+
+
+        .gallery-masonry-container {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 1.5rem;
+
+            /* === POPRAWIONE STYLE MASONRY (CSS COLUMNS) === */
+            column-count: 2;
+            /* Domyślnie 2 kolumny na mobilkach / Default 2 cols on mobile */
+            column-gap: 1rem;
+
+            /* Płynne przejście przy tasowaniu / Smooth transition for shuffle */
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Klasa dodawana na czas tasowania / Class added during shuffle */
+        .gallery-masonry-container.shuffling {
+            opacity: 0;
+        }
+
+        /* Responsywne kolumny / Responsive columns */
+        @media (min-width: 768px) {
+            .gallery-masonry-container {
+                column-count: 3;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .gallery-masonry-container {
+                column-count: 4;
+            }
+        }
+
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: var(--color-medium-dark);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+            margin: 0;
+            /* Reset <figure> */
+
+            /* NOWE / NEW */
+            width: 100%;
+            /* Obrazek zajmuje 100% szerokości kolumny / Image takes 100% of column width */
+            margin-bottom: 1rem;
+            /* Odstęp na dole / Bottom gap */
+            display: inline-block;
+            /* Zapobiega łamaniu obrazka w pół / Prevents item from breaking mid-column */
+        }
+
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            /* <-- NAPRAWIONE: Automatyczna wysokość / FIXED: Auto height */
+            display: block;
+            transition: transform 0.4s ease, filter 0.4s ease;
+            border-radius: 8px;
+            /* Przenosimy zaokrąglenie na obrazek / Move border-radius to image */
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.7);
+        }
+
+        .gallery-item-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 2.5rem;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .gallery-item:hover .gallery-item-overlay {
+            opacity: 1;
+        }
+
+        /* =================================================================
+        🔹 STYLE LIGHTBOXA / LIGHTBOX STYLES
+        =================================================================
+        */
+        #gallery-lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 2001;
+            /* Wyżej niż nagłówek galerii / Higher than gallery header */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        #gallery-lightbox.lightbox-hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /* Kiedy lightbox jest aktywny, ukrywamy nagłówek galerii i siatkę */
+        /* When lightbox is active, hide gallery header and grid */
+        #gallery-overlay.lightbox-active .gallery-header,
+        #gallery-overlay.lightbox-active .gallery-masonry-container {
+            display: none;
+        }
+
+        #lightbox-image-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem;
+            /* Odstęp od krawędzi / Padding from edges */
+        }
+
+        #lightbox-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            /* Animacja wejścia / Fade-in animation */
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        #lightbox-image.loaded {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        #lightbox-spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2002;
+        }
+
+        .lightbox-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 50px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+            z-index: 2003;
+        }
+
+        .lightbox-nav-btn:hover {
+            background-color: var(--color-primary);
+        }
+
+        .lightbox-prev {
+            left: 10px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .lightbox-next {
+            right: 10px;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .lightbox-close {
+            top: 15px;
+            right: 15px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transform: none;
+            /* Reset transformu z .lightbox-nav-btn */
+        }
+
+        .lightbox-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 1rem;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+            color: white;
+            text-align: center;
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            z-index: 2002;
+            user-select: none;
+
+            /* NOWE: Centrowanie pojedynczego licznika */
+            justify-content: center;
+            align-items: center;
+        }
+
+        #lightbox-counter {
+            font-weight: 700;
+            /* Zwiększono wagę / Increased weight */
+            color: #ffffff;
+            /* Czysta biel dla lepszego kontrastu / Pure white for better contrast */
+            /* Dodany cień, który działa jak kontur / Added shadow that acts as an outline */
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* NOWE STYLE PASKA POSTĘPU / NEW PROGRESS BAR STYLES */
+        .lightbox-progress-bar {
+            width: 100%;
+            max-width: 300px;
+            margin-top: 0.5rem;
+            height: 3px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+            overflow: hidden;
+            display: none;
+            /* Domyślnie ukryty / Hidden by default */
+        }
+
+        /* Pokazujemy pasek tylko w trybie slideshow / Show bar only in slideshow mode */
+        #gallery-lightbox.slideshow-active .lightbox-progress-bar {
+            display: block;
+        }
+
+        #lightbox-progress-fill {
+            width: 0;
+            height: 100%;
+            background-color: var(--color-primary);
+        }
+
+        #lightbox-progress-fill.animate {
+            /* Używamy zmiennej CSS, którą ustawimy w JS / Using CSS var we'll set in JS */
+            transition: width var(--slideshow-interval) linear;
+        }
+
+
         @media (max-width: 768px) {
             :root {
                 --header-height: 60px;
@@ -872,7 +1283,9 @@
             }
 
             .contact-icons a,
-            .lang-switcher-button {
+            .lang-switcher-button,
+            .gallery-button {
+                /* <-- DODANO / ADDED .gallery-button */
                 font-size: 1.2rem;
             }
 
@@ -893,6 +1306,52 @@
                 right: 1rem;
                 width: 40px;
                 height: 40px;
+            }
+
+            /* Poprawki RWD dla Galerii */
+            .gallery-header {
+                padding: 0.5rem 1rem;
+                height: var(--header-height);
+            }
+
+            .gallery-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .gallery-control-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+
+            .gallery-masonry-container {
+                padding: 1rem;
+                column-count: 2;
+                /* <-- ZMIENIONO / CHANGED */
+            }
+
+            /* Poprawki RWD dla Lightboxa */
+            #lightbox-image-container {
+                padding: 2.5rem 0.5rem;
+            }
+
+            .lightbox-nav-btn {
+                font-size: 1.2rem;
+                width: 40px;
+                height: 50px;
+            }
+
+            .lightbox-close {
+                top: 10px;
+                right: 10px;
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+
+            .lightbox-caption {
+                padding: 1rem 0.5rem;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -925,6 +1384,8 @@
         <div class="contact-icons">
             <button class="lang-switcher-button" id="lang-switcher-btn" aria-label="Zmień język"><i
                     class="fas fa-globe"></i></button>
+            <button class="gallery-button" id="gallery-open-btn" data-lang-aria-label="galleryButtonAria"><i
+                    class="fas fa-images"></i></button>
             <a href="#kontakt" aria-label="Napisz do nas"><i class="fas fa-envelope"></i></a>
             <a id="phone-link" href="#" aria-label="Zadzwoń do nas"><i class="fas fa-phone"></i></a>
         </div>
@@ -960,6 +1421,10 @@
             <div class="container">
                 <h2 data-lang="offerTitle"></h2>
                 <div class="oferta-grid" id="oferta-grid-container">
+                </div>
+
+                <div class="oferta-cta-wrapper">
+                    <a href="#" id="gallery-cta-link" class="btn-oferta-gallery" data-lang="seeOurProjects"></a>
                 </div>
             </div>
         </section>
@@ -1002,6 +1467,56 @@
                 </a>
             </div>
         </section>
+
+        <div id="gallery-overlay" class="gallery-hidden">
+            <div class="gallery-header">
+                <h2 data-lang="galleryTitle">Galeria</h2>
+                <div class="gallery-controls">
+                    <button id="gallery-shuffle-btn" class="gallery-control-btn"
+                        data-lang-aria-label="galleryShuffleAria">
+                        <i class="fas fa-random"></i>
+                    </button>
+                    <button id="gallery-play-btn" class="gallery-control-btn" data-lang-aria-label="galleryPlayAria">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="gallery-close-btn" class="gallery-control-btn" data-lang-aria-label="galleryCloseAria">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="gallery-masonry-container" class="gallery-masonry-container">
+            </div>
+
+            <div id="gallery-lightbox" class="lightbox-hidden">
+                <div id="lightbox-spinner">
+                    <div class="spinner"></div>
+                </div>
+
+                <div id="lightbox-image-container">
+                    <img id="lightbox-image" src="" alt="Widok pełnoekranowy">
+                </div>
+
+                <button id="lightbox-close-btn" class="lightbox-nav-btn lightbox-close"
+                    data-lang-aria-label="galleryCloseAria">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="lightbox-prev-btn" class="lightbox-nav-btn lightbox-prev"
+                    data-lang-aria-label="galleryPrevAria">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="lightbox-next-btn" class="lightbox-nav-btn lightbox-next"
+                    data-lang-aria-label="galleryNextAria">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div id="lightbox-caption" class="lightbox-caption">
+                    <span id="lightbox-counter"></span>
+                    <div class="lightbox-progress-bar">
+                        <div id="lightbox-progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -1018,6 +1533,8 @@
 
     <script src="js/lang.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/photos.js"></script>
+    <script src="js/gallery.js"></script>
 
     <script>
         (function () {
@@ -1313,9 +1830,6 @@
                 return closeModal;
             }
 
-            // =================================================================
-            // 🚀 INICJALIZACJA STRONY
-            // =================================================================
             // =================================================================
             // 🚀 INICJALIZACJA STRONY
             // =================================================================

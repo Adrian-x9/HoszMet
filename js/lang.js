@@ -34,7 +34,18 @@ const allStrings = {
         footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Projekt i Realizacja: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Wszelkie prawa zastrzeżone.",
         footerPrivacy: "Strona wykorzystuje pliki cookies w celu zapewnienia najwyższej jakości usług. Dalsze korzystanie z witryny oznacza zgodę na ich użycie. Szanujemy Twoją prywatność.",
         backToTopAria: "Powrót do góry",
-        loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Wystąpił błąd ładowania.<br>Prosimy odświeżyć stronę.'
+        loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Wystąpił błąd ładowania.<br>Prosimy odświeżyć stronę.',
+        // TŁUMACZENIA GALERII / GALLERY TRANSLATIONS
+        galleryButtonAria: "Otwórz galerię",
+        galleryTitle: "Galeria",
+        galleryShuffleAria: "Przetasuj zdjęcia",
+        galleryPlayAria: "Uruchom pokaz slajdów",
+        galleryCloseAria: "Zamknij galerię",
+        galleryPrevAria: "Poprzednie zdjęcie",
+        galleryNextAria: "Następne zdjęcie",
+        galleryPhotoCounter: "Zdjęcie",
+        galleryPhotoOf: "z",
+        seeOurProjects: "Zobacz nasze realizacje"
     },
     // ================== ENGLISH (US) ==================
     us: {
@@ -67,7 +78,18 @@ const allStrings = {
         footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Design and Implementation: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. All rights reserved.",
         footerPrivacy: "This website uses cookies to ensure the highest quality of service. By continuing to use the site, you agree to their use. We respect your privacy.",
         backToTopAria: "Back to top",
-        loaderError: '<i class="fas fa-exclamation-triangle"></i><br>An error occurred while loading.<br>Please refresh the page.'
+        loaderError: '<i class="fas fa-exclamation-triangle"></i><br>An error occurred while loading.<br>Please refresh the page.',
+        // TŁUMACZENIA GALERII / GALLERY TRANSLATIONS
+        galleryButtonAria: "Open gallery",
+        galleryTitle: "Gallery",
+        galleryShuffleAria: "Shuffle photos",
+        galleryPlayAria: "Start slideshow",
+        galleryCloseAria: "Close gallery",
+        galleryPrevAria: "Previous photo",
+        galleryNextAria: "Next photo",
+        galleryPhotoCounter: "Photo",
+        galleryPhotoOf: "of",
+        seeOurProjects: "See our projects"
     },
     // ================== GERMAN (DE) ==================
     de: {
@@ -100,7 +122,17 @@ const allStrings = {
         footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Design und Umsetzung: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Alle Rechte vorbehalten.",
         footerPrivacy: "Diese Webseite verwendet Cookies, um die höchste Servicequalität zu gewährleisten. Indem Sie die Seite weiterhin nutzen, stimmen Sie deren Verwendung zu. Wir respektieren Ihre Privatsphäre.",
         backToTopAria: "Zurück nach oben",
-        loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Beim Laden ist ein Fehler aufgetreten.<br>Bitte laden Sie die Seite neu.'
+        loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Beim Laden ist ein Fehler aufgetreten.<br>Bitte laden Sie die Seite neu.',
+        galleryButtonAria: "Galerie öffnen",
+        galleryTitle: "Galerie",
+        galleryShuffleAria: "Fotos mischen",
+        galleryPlayAria: "Diashow starten",
+        galleryCloseAria: "Galerie schließen",
+        galleryPrevAria: "Vorheriges Foto",
+        galleryNextAria: "Nächstes Foto",
+        galleryPhotoCounter: "Foto",
+        galleryPhotoOf: "von",
+        seeOurProjects: "Sehen Sie sich unsere Projekte an"
     },
     // ================== CZECH (CZ) ==================
     cz: {
@@ -133,7 +165,17 @@ const allStrings = {
         footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Návrh a realizace: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Všechna práva vyhrazena.",
         footerPrivacy: "Tato webová stránka používá soubory cookies k zajištění nejvyšší kvality služeb. Dalším používáním stránky souhlasíte s jejich použitím. Respektujeme vaše soukromí.",
         backToTopAria: "Zpět na začátek",
-        loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Při načítání došlo k chybě.<br>Obnovte prosím stránku.'
+        loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Při načítání došlo k chybě.<br>Obnovte prosím stránku.',
+        galleryButtonAria: "Otevřít galerii",
+        galleryTitle: "Galerie",
+        galleryShuffleAria: "Zamíchat fotografie",
+        galleryPlayAria: "Spustit prezentaci",
+        galleryCloseAria: "Zavřít galerii",
+        galleryPrevAria: "Předchozí fotografie",
+        galleryNextAria: "Další fotografie",
+        galleryPhotoCounter: "Fotografie",
+        galleryPhotoOf: "z",
+        seeOurProjects: "Zobrazit naše projekty"
     },
     // ================== SLOVAK (SK) ==================
     sk: {
@@ -166,7 +208,17 @@ const allStrings = {
         footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Návrh a realizácia: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Všetky práva vyhradené.",
         footerPrivacy: "Táto webová stránka používa súbory cookie na zabezpečenie najvyššej kvality služieb. Pokračovaním v používaní stránky súhlasíte s ich používaním. Rešpektujeme vaše súkromie.",
         backToTopAria: "Späť na začiatok",
-        loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Vyskytla sa chyba pri načítaní.<br>Prosím, obnovte stránku.'
+        loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Vyskytla sa chyba pri načítaní.<br>Prosím, obnovte stránku.',
+        galleryButtonAria: "Otvoriť galériu",
+        galleryTitle: "Galéria",
+        galleryShuffleAria: "Premiešať fotografie",
+        galleryPlayAria: "Spustiť prezentáciu",
+        galleryCloseAria: "Zatvoriť galériu",
+        galleryPrevAria: "Predchádzajúca fotografia",
+        galleryNextAria: "Nasledujúca fotografia",
+        galleryPhotoCounter: "Fotografia",
+        galleryPhotoOf: "z",
+        seeOurProjects: "Pozrite si naše realizácie"
     }
 };
 
@@ -204,7 +256,17 @@ allStrings.es = { // SPANISH
     footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Diseño e Implementación: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Todos los derechos reservados.",
     footerPrivacy: "Este sitio web utiliza cookies para garantizar la más alta calidad de servicio. Al continuar utilizando el sitio, usted acepta su uso. Respetamos su privacidad.",
     backToTopAria: "Volver arriba",
-    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Ocurrió un error al cargar.<br>Por favor, actualice la página.'
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Ocurrió un error al cargar.<br>Por favor, actualice la página.',
+    galleryButtonAria: "Abrir galería",
+    galleryTitle: "Galería",
+    galleryShuffleAria: "Mezclar fotos",
+    galleryPlayAria: "Iniciar presentación",
+    galleryCloseAria: "Cerrar galería",
+    galleryPrevAria: "Foto anterior",
+    galleryNextAria: "Siguiente foto",
+    galleryPhotoCounter: "Foto",
+    galleryPhotoOf: "de",
+    seeOurProjects: "Ver nuestros proyectos"
 };
 allStrings.fr = { // FRENCH
     ...allStrings.us,
@@ -236,7 +298,17 @@ allStrings.fr = { // FRENCH
     footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Conception et Réalisation: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Tous droits réservés.",
     footerPrivacy: "Ce site web utilise des cookies pour garantir la meilleure qualité de service. En continuant à utiliser le site, vous acceptez leur utilisation. Nous respectons votre vie privée.",
     backToTopAria: "Retour en haut",
-    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Une erreur est survenue lors du chargement.<br>Veuillez rafraîchir la page.'
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Une erreur est survenue lors du chargement.<br>Veuillez rafraîchir la page.',
+    galleryButtonAria: "Ouvrir la galerie",
+    galleryTitle: "Galerie",
+    galleryShuffleAria: "Mélanger les photos",
+    galleryPlayAria: "Démarrer le diaporama",
+    galleryCloseAria: "Fermer la galerie",
+    galleryPrevAria: "Photo précédente",
+    galleryNextAria: "Photo suivante",
+    galleryPhotoCounter: "Photo",
+    galleryPhotoOf: "sur",
+    seeOurProjects: "Voir nos projets"
 };
 allStrings.it = { // ITALIAN
     ...allStrings.us,
@@ -268,14 +340,24 @@ allStrings.it = { // ITALIAN
     footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Progettazione e Realizzazione: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Tutti i diritti riservati.",
     footerPrivacy: "Questo sito web utilizza i cookie per garantire la massima qualità del servizio. Continuando a utilizzare il sito, acconsenti al loro uso. Rispettiamo la tua privacy.",
     backToTopAria: "Torna su",
-    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Si è verificato un errore durante il caricamento.<br>Si prega di aggiornare la pagina.'
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Si è verificato un errore durante il caricamento.<br>Si prega di aggiornare la pagina.',
+    galleryButtonAria: "Apri galleria",
+    galleryTitle: "Galleria",
+    galleryShuffleAria: "Mescola foto",
+    galleryPlayAria: "Avvia presentazione",
+    galleryCloseAria: "Chiudi galleria",
+    galleryPrevAria: "Foto precedente",
+    galleryNextAria: "Foto successiva",
+    galleryPhotoCounter: "Foto",
+    galleryPhotoOf: "di",
+    seeOurProjects: "Guarda i nostri progetti"
 };
 allStrings.ua = { // UKRAINIAN
     ...allStrings.us,
     metaTitle: "HoszMet - Сучасні сталеві конструкції",
     metaDescription: "HoszMet – лідер у сталеливарній промисловості. Ми пропонуємо комплексні послуги, пов'язані з монтажем сталевих конструкцій, зварюванням та облицюванням сендвіч-панелями.",
     metaKeywords: "сталеві конструкції, монтаж ангарів, зварювання, сендвіч-панелі, HoszMet, Сосніцовіце",
-    videoNotSupported: "Ваш браузер не підтримує тег video.",
+    videoNotSupported: "Ваш браузер не підтримуuje тег video.",
     heroTitle: '<span class="hero-hosz">Hosz</span><span class="hero-met">Met</span> - Довговічність та Сучасність у Сталі',
     heroSubtitle: 'Ми проєктуємо, виготовляємо та монтуємо сталеві конструкції найвищої якості, адаптовані до ваших потреб.',
     toggleVideoBtn_On: "Вимкнути відео та показати проєкти",
@@ -300,7 +382,17 @@ allStrings.ua = { // UKRAINIAN
     footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Дизайн та реалізація: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Всі права захищено.",
     footerPrivacy: "Цей веб-сайт використовує файли cookie для забезпечення найвищої якості послуг. Продовжуючи користуватися сайтом, ви погоджуєтеся на їх використання. Ми поважаємо вашу конфіденційність.",
     backToTopAria: "Повернутися догори",
-    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Сталася помилка під час завантаження.<br>Будь ласка, оновіть сторінку.'
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Сталася помилка під час завантаження.<br>Будь ласка, оновіть сторінку.',
+    galleryButtonAria: "Відкрити галерею",
+    galleryTitle: "Галерея",
+    galleryShuffleAria: "Перемішати фотографії",
+    galleryPlayAria: "Запустити слайд-шоу",
+    galleryCloseAria: "Закрити галерею",
+    galleryPrevAria: "Попереднє фото",
+    galleryNextAria: "Наступне фото",
+    galleryPhotoCounter: "Фото",
+    galleryPhotoOf: "з",
+    seeOurProjects: "Подивіться наші проєкти"
 };
 allStrings.br = { // BRAZILIAN PORTUGUESE
     ...allStrings.us,
@@ -332,7 +424,17 @@ allStrings.br = { // BRAZILIAN PORTUGUESE
     footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Projeto e Implementação: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Todos os direitos reservados.",
     footerPrivacy: "Este site usa cookies para garantir a mais alta qualidade de serviço. Ao continuar a usar o site, você concorda com o uso deles. Nós respeitamos sua privacidade.",
     backToTopAria: "Voltar ao topo",
-    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Ocorreu um erro durante o carregamento.<br>Por favor, atualize a página.'
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Ocorreu um erro durante o carregamento.<br>Por favor, atualize a página.',
+    galleryButtonAria: "Abrir galeria",
+    galleryTitle: "Galeria",
+    galleryShuffleAria: "Embaralhar fotos",
+    galleryPlayAria: "Iniciar slideshow",
+    galleryCloseAria: "Fechar galeria",
+    galleryPrevAria: "Foto anterior",
+    galleryNextAria: "Próxima foto",
+    galleryPhotoCounter: "Foto",
+    galleryPhotoOf: "de",
+    seeOurProjects: "Veja nossos projetos"
 };
 allStrings.cn = { // CHINESE (SIMPLIFIED)
     ...allStrings.us,
@@ -364,7 +466,17 @@ allStrings.cn = { // CHINESE (SIMPLIFIED)
     footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. 设计与实施: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. 版权所有。",
     footerPrivacy: "本网站使用cookies以确保最高质量的服务。继续使用本网站即表示您同意我们使用cookies。我们尊重您的隐私。",
     backToTopAria: "返回顶部",
-    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>加载时发生错误。<br>请刷新页面。'
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>加载时发生错误。<br>请刷新页面。',
+    galleryButtonAria: "打开相册",
+    galleryTitle: "相册",
+    galleryShuffleAria: "随机播放照片",
+    galleryPlayAria: "开始幻灯片",
+    galleryCloseAria: "关闭相册",
+    galleryPrevAria: "上一张照片",
+    galleryNextAria: "下一张照片",
+    galleryPhotoCounter: "照片",
+    galleryPhotoOf: "/",
+    seeOurProjects: "查看我们的项目"
 };
 allStrings.in = { // HINDI
     ...allStrings.us,
@@ -396,7 +508,17 @@ allStrings.in = { // HINDI
     footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. डिजाइन और कार्यान्वयन: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. सर्वाधिकार सुरक्षित।",
     footerPrivacy: "यह वेबसाइट सेवा की उच्चतम गुणवत्ता सुनिश्चित करने के लिए कुकीज़ का उपयोग करती है। साइट का उपयोग जारी रखकर, आप उनके उपयोग के लिए सहमत हैं। हम आपकी गोपनीयता का सम्मान करते हैं।",
     backToTopAria: "वापस ऊपर",
-    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>लोड करते समय एक त्रुटि हुई।<br>कृपया पृष्ठ को ताज़ा करें।'
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>लोड करते समय एक त्रुटि हुई।<br>कृपया पृष्ठ को ताज़ा करें।',
+    galleryButtonAria: "गैलरी खोलें",
+    galleryTitle: "गैलरी",
+    galleryShuffleAria: "तस्वीरें शफ़ल करें",
+    galleryPlayAria: "स्लाइड शो शुरू करें",
+    galleryCloseAria: "गैलरी बंद करें",
+    galleryPrevAria: "पिछली तस्वीर",
+    galleryNextAria: "अगली तस्वीर",
+    galleryPhotoCounter: "तस्वीर",
+    galleryPhotoOf: "/",
+    seeOurProjects: "हमारी परियोजनाएं देखें"
 };
 allStrings.id = { // INDONESIAN
     ...allStrings.us,
@@ -428,7 +550,17 @@ allStrings.id = { // INDONESIAN
     footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. Desain dan Implementasi: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. Hak cipta dilindungi undang-undang.",
     footerPrivacy: "Situs web ini menggunakan cookie untuk memastikan kualitas layanan tertinggi. Dengan terus menggunakan situs ini, Anda menyetujui penggunaannya. Kami menghormati privasi Anda.",
     backToTopAria: "Kembali ke atas",
-    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Terjadi kesalahan saat memuat.<br>Silakan segarkan halaman.'
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>Terjadi kesalahan saat memuat.<br>Silakan segarkan halaman.',
+    galleryButtonAria: "Buka galeri",
+    galleryTitle: "Galeri",
+    galleryShuffleAria: "Acak foto",
+    galleryPlayAria: "Mulai slideshow",
+    galleryCloseAria: "Tutup galeri",
+    galleryPrevAria: "Foto sebelumnya",
+    galleryNextAria: "Foto berikutnya",
+    galleryPhotoCounter: "Foto",
+    galleryPhotoOf: "dari",
+    seeOurProjects: "Lihat proyek kami"
 };
 allStrings.jp = { // JAPANESE
     ...allStrings.us,
@@ -460,8 +592,30 @@ allStrings.jp = { // JAPANESE
     footerCopyright: "© 2025 <a href='http://www.hoszmet.pl' target='_blank'>HoszMet</a>. デザインと実装: <a href='http://www.ade.pl' target='_blank'><strong>ade</strong></a>. 全著作権所有。",
     footerPrivacy: "このウェブサイトは、最高品質のサービスを保証するためにクッキーを使用しています。サイトの利用を継続することにより、その使用に同意したことになります。私たちはあなたのプライバシーを尊重します。",
     backToTopAria: "トップに戻る",
-    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>読み込み中にエラーが発生しました。<br>ページを更新してください。'
+    loaderError: '<i class="fas fa-exclamation-triangle"></i><br>読み込み中にエラーが発生しました。<br>ページを更新してください。',
+    galleryButtonAria: "ギャラリーを開く",
+    galleryTitle: "ギャラリー",
+    galleryShuffleAria: "写真をシャッフル",
+    galleryPlayAria: "スライドショーを開始",
+    galleryCloseAria: "ギャラリーを閉じる",
+    galleryPrevAria: "前の写真",
+    galleryNextAria: "次の写真",
+    galleryPhotoCounter: "写真",
+    galleryPhotoOf: "/",
+    seeOurProjects: "プロジェクトを見る"
 };
 
 // Singapore uses English as a base
-allStrings.sg = { ...allStrings.us };
+allStrings.sg = { 
+    ...allStrings.us,
+    galleryButtonAria: "Open gallery",
+    galleryTitle: "Gallery",
+    galleryShuffleAria: "Shuffle photos",
+    galleryPlayAria: "Start slideshow",
+    galleryCloseAria: "Close gallery",
+    galleryPrevAria: "Previous photo",
+    galleryNextAria: "Next photo",
+    galleryPhotoCounter: "Photo",
+    galleryPhotoOf: "of",
+    seeOurProjects: "See our projects"
+};
